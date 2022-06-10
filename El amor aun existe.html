@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>El Amor Aún Existe</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: 666666; SCROLLBAR-HIGHLIGHT-COLOR: FF6666; SCROLLBAR-SHADOW-COLOR: FF6666; SCROLLBAR-3DLIGHT-COLOR: FF6666; SCROLLBAR-ARROW-COLOR: FF6666; SCROLLBAR-TRACK-COLOR: FF6666; SCROLLBAR-DARKSHADOW-COLOR:FF6666 }</style>
+</head>
+
+<body background="paisaje.jpg" bgproperties="fixed">
+<font face="comic sans ms" size=3 color="white">
+
+<!--***TEXTO*-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 70; 
+str= "Señor...q' me esta pasando<BR>Siento q' la vida me esta golpeando<BR>Y q' mis animos estan bajando<BR>No me quiero despertar<BR>Me tengo q' tranquilizar.<BR><BR>Tal vez todo esto sea pasajero<BR>O necesitare un consejero?<BR>Q' le pasa a mi corazón?<BR>O estare perdiendo la razón.<BR><BR>El mundo esta cambiando<BR>No es lo q' yo habia esperado<BR>O quizas no tienen sentimientos<BR>Pues solo desean pasar buenos momentos<BR>Y el amor verdadero...donde ha quedado?<BR>Acaso lo tienen olvidado?.<BR><BR>El amor es algo q' siempre ha existido<BR>X favor...no lo den x perdido<BR>Ciertamente tenemos q' luchar<BR>Para q' el amor pueda perseverar<BR>Q' no lo tomen como algo secundario<BR>Más bien q' sea algo primario.<BR><BR>Dios...solo Tú nos puedes ayudar<BR>Para q' el mundo se pueda animar<BR>Y si realmente queremos cambiar<BR>Juntos poderemos caminar<BR>Para q' el amor se pueda renovar.<BR><BR>Y lo podamos hacer algo primordial<BR>Y x siempre sera algo especial.<BR>"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="ARIAL" color="WHITE">'+msg.fontsize(3)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="ARIAL" color="WHITE">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 200px; top: 10px"></span>
+<!--***FIN DE TEXTO***-->
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+<CENTER>
+

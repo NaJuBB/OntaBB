@@ -1,0 +1,136 @@
+<html> 
+<head>
+<title>La Familia, la Propiedad privada y el Amor</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "SILVIO RODRIGUEZ......"
+ar[2] = "SU FAVORITO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=5>La familia, la propiedad privada y el amor...
+<font size=1>Silvio Rodriguez</font></marquee></font></MARQUEE></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+El derrumbe de un sueño <BR>
+Algo hallado pasando <BR>
+Resultabas ser tú <BR>
+<BR>
+Una esponja sin dueño <BR>
+Un silbido buscando <BR>
+Resultaba ser yo <BR>
+<BR>
+Cuando se hallan dos balas <BR>
+Sobre un campo de guerra <BR>
+Algo debe ocurrir <BR>
+Q' prediga el amor<BR> 
+De cabeza hacia el suelo <BR>
+Una nube vendrá <BR>
+O estampidas de tiempo <BR> 
+Los ojos tendrán <BR>
+Fue preciso algo siempre <BR>
+Y no fue xq' tú...<BR>
+<BR>
+Tenías lazos blancos en la piel <BR>
+Tú, tenías precio puesto desde ayer <BR>
+Tú, valías cuatro cuños de la ley <BR>
+Tú, sentada sobre el miedo<BR> 
+Sentada sobre el miedo<br>
+Sentada sobre el miedo de correr <BR>
+<BR>
+Una buena muchacha de casa decente, no puede salir <BR>
+Q' diría la gente el domingo en la misa <BR>
+Si saben de ti <BR>
+Q' dirían los amigos <BR>
+Los viejos vecinos <BR>
+Q' vienen aquí <BR>
+Q' dirían las ventanas <BR>
+Tu madre y su hermana <BR>
+Y todos los siglos de colonialismo español<BR> 
+Q' no en balde te han hecho cobarde <BR>
+Q' diría Dios...<BR>
+<BR>
+Si amas sin la Iglesia y sin la ley <BR>
+Dios, a quien ya te entregaste en comunión <BR>
+Dios, q' hace eternas las almas de los niños <BR>
+Q' destrozarán las bombas y el napalm <BR>
+<BR>
+El derrumbe de un sueño <BR>
+Algo hallado pasando <BR>
+Resultaba ser tú <BR>
+<br>
+Una esponja sin dueño un silbido buscando <BR>
+Resultabas ser yo <BR>
+<BR>
+Busca amor con anillos <BR>
+Y papeles firmados <BR>
+Y cuando dejes de amar <BR>
+Ten presentes los niños <BR>
+No dejes tu esposo <BR>
+Ni una buena casa <BR>
+Y si no se resisten <BR>
+Serruchen los bienes <BR>
+Q' tienes derecho también <BR>
+Xq' tú...<BR>
+<BR>
+Tenías lazos blancos en la piel <BR>
+Tú, tenías precio puesto desde ayer <BR>
+Tú, valías cuatro cuños de la ley <BR>
+Tú, sentada sobre el miedo <BR>
+Sentada sobre el miedo <BR>
+Sentada sobre el miedo de correr <BR>
+<BR>
+<HR>
+<BR><BR>
+<embed src="LA FAMILIA.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

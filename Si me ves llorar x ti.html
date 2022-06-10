@@ -1,0 +1,125 @@
+<html> 
+<head>
+<title>Si me ves llorar x ti</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "SI ME VES LLORAR X TI............"
+ar[1] = "CRISTIAN......"
+ar[2] = "SÉ Q CRIS NO TE GUSTA BB......"
+ar[3] = "PERO ESCUCHA Q CANCIÓN!!!......"
+ar[4] = "APOCO NO???????......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Si me ves llorar x ti...
+<font size=1>Cristian</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Es preciso decir q' no<BR>
+Cuando se tiene el alma herida <BR>
+X q' el amor de los dos <BR>
+El q' una vez fue el mejor <BR>
+Hoy me lastima <BR>
+<BR>
+Es preciso decir q' no <BR>
+Cuando no existe otra salida<BR>
+Para evitar el dolor  <BR>
+Para evitar el  rencor <BR>
+Del amor q' hoy termina<BR>
+<BR>
+Y estoy <BR>
+Pidiéndole a Dios <BR>
+Q' un buen amor <BR>
+Te de su abrigo <BR>
+<BR>
+Y estoy <BR>
+Buscando valor <BR>
+Para este adiós <BR>
+Yo no te olvido...no te olvido...<BR>
+<BR>
+Y así...me quedo sin ti <BR>
+Me quiero morir...x dentro<BR>
+<BR>
+Q' será de mi<BR>
+Vivir...mi sufrimiento<BR>
+<BR>
+Alguna vez sabrás cuanto te ame <BR>
+Si me ves llorar x ti... <BR>
+<BR>
+Es preciso decir q' no <BR>
+Cuando no existe otra salida<BR>
+Para evitar el dolor  <BR>
+Para evitar el  rencor <BR>
+Del amor q' hoy termina<BR>
+<BR>
+Y estoy <BR>
+Pidiéndole a Dios <BR>
+Q' un buen amor <BR>
+Te de su abrigo <BR>
+<BR>
+Y estoy <BR>
+Buscando valor <BR>
+Para este adiós <BR>
+Yo no te olvido...no te olvido...<BR>
+<BR>
+Y así...me quedo sin ti <BR>
+Me quiero morir...x dentro<BR>
+<BR>
+Q' será de mi<BR>
+Vivir...mi sufrimiento<BR>
+<BR>
+Alguna ves sabrás cuanto te ame <BR>
+Si me ves llorar x ti... <BR>
+Si me ves llorar x ti...<BR><BR>
+<HR>
+<BR><BR>
+<embed src="si me ves llorar x ti.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

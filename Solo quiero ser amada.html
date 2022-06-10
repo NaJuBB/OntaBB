@@ -1,0 +1,121 @@
+<html> 
+<head>
+<title>Solo quiero ser amada</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "SOLO QUIERO SER AMADA..........."
+ar[1] = "ANA GABRIEL......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Solo quiero ser amada...
+<font size=1>Ana Gabriel</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+La misma ciudad <BR>
+Y el frió congelando mis lagrimas <BR>
+Sola quede <BR>
+Y los recuerdos quebrándome el alma <BR>
+<BR>
+Te amo <BR>
+Y no te puedo olvidar <BR>
+De veras yo no logro escapar <BR>
+<BR>
+La nieve sin fin<BR>
+Me vuelve a ese pasado q añoro<BR>
+Una ves más tu rostro se apodera de todo<BR>
+Lo cierto esq te quiero besar<BR>
+Y amarnos como nunca quizás<BR>
+<BR>
+Nada de los dos quedo <BR>
+Y sin embargo yo te espero<BR>
+<BR>
+Yo no se si vuelva verte<BR>
+Yo no se q pasara<BR>
+No me importa nada, nada<BR>
+Solo quiero ser amada<BR>
+<BR>
+Yo no se si vuelva verte<BR>
+Yo no se q pasara<BR>
+No me importa nada, nada<BR>
+Solo quiero ser amada<BR>
+<BR>
+La nieve sin fin<BR>
+Me vuelve a ese pasado q añoro<BR>
+Una ves más tu rostro se apodera de todo<BR>
+Lo cierto esq te quiero besar<BR>
+Y amarnos como nunca quizás<BR>
+<BR>
+Nada de los dos quedo <BR>
+Y sin embargo yo te espero<BR>
+<BR>
+Yo no se si vuelva verte<BR>
+Yo no se q pasara<BR>
+No me importa nada, nada<BR>
+Solo quiero será amada<BR>
+<BR>
+Yo no se si vuelva verte<BR>
+Yo no se q pasara<BR>
+No me importa nada, nada<BR>
+Solo quiero ser amada<BR>
+<BR>
+Yo no se si vuelva verte<BR>
+Yo no se q pasara<BR>
+No me importa nada, nada<BR>
+Solo quiero ser amada<BR>
+<BR>
+La misma ciudad <BR>
+Y el frió congelando mis lágrimas...<BR><br>
+<HR>
+<BR><BR>
+<embed src="solo quiero ser amada.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

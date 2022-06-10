@@ -1,0 +1,128 @@
+<HTML>
+<HEAD>
+<TITLE>22 AÑITOS</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO**-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "ESTO PASO..............."
+ar[1] = "CUANDO BB CUMPLIO 22 AÑITOS!!!!!......"
+ar[2] = "ESPERO TE HAYA GUSTADO BB!!!!......."
+ar[3] = "AUNQ NO ME INVITASTE PASTEL EHHH......."
+ar[4] = "PERO AUN ASI......."
+ar[5] = "TE AMOOOOOOOOO!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO**-->
+
+<!--***VENTANA**-->
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana() {
+var Nueva = window.open("021105.swf","","status,height=350,width=500")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = true
+}
+</SCRIPT>
+<!--***FIN DE VENTANA**-->
+</HEAD>
+
+<BODY BGCOLOR="BLACK">
+
+<FONT FACE="COMIC SANS MS" SIZE=3 COLOR="WHITE">
+<HR><BR>
+<CENTER>
+Creo q este ha sido el mejor cumple q le he festejado....  
+<br>
+Aun no estando con él!!!!...<IMG SRC="llorar.gif" WIDTH="3%" ALT="AHHHHH!!!"><br>
+Miren xq!!!!!!!
+<BR>
+<BR>
+<A HREF="a ro.doc" target=_black><IMG SRC="word.bmp" WIDTH="17%" ALT="CARTA A MI CUÑADITO!!!"></A>
+<br><br>
+Y si!!!!...mi cuñadito me hizo el favor de todo lo q le pedi...
+<br>
+Y como BB ya estaba <IMG SRC="dormido.gif" WIDTH="13%" ALT="DORMIDO!!!"> lo despertaron diciendole q le llamaban x <IMG SRC="tel.gif" WIDTH="5%" ALT="TELEFONO!!!">...<br>
+y  <IMG SRC="enojado.gif" WIDTH="7%" ALT="ENOJADO!!!"> se levanto a contestar...<br>
+pero al llegar al tel...se dio cuenta de q estaba todo apagado...
+<br>
+y entonces escucho esto!!!
+<br><br>
+<A HREF="1 las otras mananitas.mp3" target=_black><IMG SRC="cyber mariachi.gif" WIDTH="20%" ALT="LAS OTRAS MAÑANITAS!!!"></A>
+<br><br>
+Cuando se dio cuenta quien cantaba...le pidieron q le mordiera al <IMG SRC="pastel.gif" WIDTH="7%" ALT="PASTEL IMPOSIBLE!!!"> 
+<BR>
+mientras seguia escuchando esto....
+<br><br>
+<A HREF="2 en tu dia.mp3" target=_black><IMG SRC="cyber mariachi.gif" WIDTH="20%" ALT="EN TU DÍA!!!"></A>
+<br>
+<A HREF="3 Brazos de sol.mp3" target=_black><IMG SRC="musico.gif" WIDTH="15%" ALT="BRAZOS DE SOL!!!"></A>
+<br><br>
+Y asi paso!!!!!...lo <IMG SRC="abrazaron.gif" WIDTH="7%" ALT="ABRAZARON!!!"> y felicitaron sus papas y hermanos...
+<br>
+y Ro...siguiendo instrucciones le dio esta...
+<br><br>
+
+ <INPUT onclick=CrearVentana() type=IMAGE SRC="carta.gif" WIDTH="15%" ALT="CARTA!!!" name=newOne> 
+<br><br>
+y mientras la <IMG SRC="leia.gif" WIDTH="13%" ALT="LEIA!!!">...continuaba escuchando....
+<br><br>
+<A HREF="4 yo.mp3" target=_black><IMG SRC="yo.bmp" WIDTH="15%" ALT="osea la fresa!!!!!..."></A>
+<br><br>
+Y Ro...x ultimo le dio una...<IMG SRC="cajita.gif" WIDTH="5%" ALT="CAJITA!!!"> en la cual estaba guardado esto...
+<br><br>
+una....<IMG SRC="esclava.bmp" WIDTH="7%" ALT="Q DECIA BEBÉ!!!">...su regalo y ultima sorpresa!!!
+<br><br>
+Y asi se la paso <IMG SRC="borrachos.gif" WIDTH="13%" ALT="CELEBRANDO!!!">este cumple...pero sin ponerse jarra...
+<IMG SRC="diente.gif" WIDTH="5%" ALT="JAJAJAJAJA!!!">
+<BR><BR>
+
+Espero te la hayas pasado muy bien...y te haya gustado mi serenata...sabes Amor?
+<BR><BR>
+<FONT FACE="COMIC SANS MS" SIZE=7 COLOR="CC0000">
+TE AMO MUCHO!!!!!
+</FONT><BR><BR>
+Y espero festejar muchos añitos mas contigo...<br>
+o al menos celebrarte como quiera q estemos!!!!
+<BR><BR><HR>
+
+

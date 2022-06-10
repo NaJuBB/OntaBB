@@ -1,0 +1,96 @@
+<html> 
+<head>
+<title>Mi Unicornio Azul</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "SILVIO RODRIGUEZ......"
+ar[2] = "SU FAVORITO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Mi unicornio azúl...
+<font size=1>Silvio Rodriguez</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Mi unicornio azúl ayer se me perdió.<br>
+Pastando lo dejé y desapareció.<br>
+Cualquier información bien la voy a pagar.<br>
+Las flores que dejó<br>
+no me han querido hablar. <br>
+<br>
+Mi unicornio azúl  ayer se me perdió,<br>
+no sé si se me fue, no sé si extravió,<br>
+y yo no tengo más que un unicornio azúl .<br>
+Si alguien sabe de él, le ruego información.<br>
+Cien mil o un millón, yo pagaré.<br>
+Mi unicornio azúl  se me ha perdido ayer,<br>
+se fue. <br>
+<br>
+Mi unicornio y yo hicimos amistad,<br>
+un poco con amor, un poco con verdad.<br>
+Con su cuerno de añil pescaba una canción,<br>
+saberla compartir era su vocación. <br>
+<br>
+Mi unicornio azúl  ayer se me perdió,<br>
+y puede parecer acaso una obsesión,<br>
+pero no tengo más que un unicornio azúl <br>
+y aunque tuviera dos yo sólo quiero aquel.<br>
+Cualquier información, la pagaré.<br>
+Mi unicornio azúl  se me ha perdido ayer,<br>
+se fue. <br>
+
+
+<BR>
+<HR>
+<BR><BR>
+<embed src="mi unicornio azul.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

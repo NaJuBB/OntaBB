@@ -1,0 +1,139 @@
+<HTML>
+<HEAD>
+<TITLE>Principal...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+
+<FONT COLOR="WHITE" SIZE=2 FACE="COMIC SANS MS">
+
+<!--***FECHA***-->
+<SCRIPT LANGUAGE="JavaScript">
+function MatrizFechaDia(n) {
+this.length = n
+return this
+}
+monthNames = new MatrizFechaDia(12)
+monthNames[1] = "enero"
+monthNames[2] = "febrero"
+monthNames[3] = "marzo"
+monthNames[4] = "abril"
+monthNames[5] = "mayo"
+monthNames[6] = "junio"
+monthNames[7] = "julio"
+monthNames[8] = "agosto"
+monthNames[9] = "septiembre"
+monthNames[10] = "octubre"
+monthNames[11] = "noviembre"
+monthNames[12] = "diciembre"
+
+dayNames = new MatrizFechaDia(7)
+dayNames[1] = "domingo"
+dayNames[2] = "lunes"
+dayNames[3] = "martes"
+dayNames[4] = "miercoles"
+dayNames[5] = "jueves"
+dayNames[6] = "viernes"
+dayNames[7] = "sabado"
+
+function SacaFechaDia(oneDate) {
+var DDw = dayNames[oneDate.getDay() + 1]
+var MMw = monthNames[oneDate.getMonth() + 1]
+var AAw = oneDate.getYear() + 0
+return DDw + ", " + MMw + " " + oneDate.getDate() + ", " + AAw
+}
+function SacaJornada(oneDate) {
+var HHw = oneDate.getHours()
+if (HHw < 6 )
+return "MADRUGADA???...no tienes sueño?"
+if (HHw < 12)
+return "DIA?...feliz dia, ahora q te has levantado"
+if (HHw < 18)
+return "TARDE?...no tienes nada q hacer?"
+return "NOCHE???...q tengas dulces sueños"
+}
+</SCRIPT>
+</HEAD>
+
+<p align="right">
+<SCRIPT LANGUAGE="JavaScript">
+fechaw = new Date()
+var mensaje = (SacaFechaDia(fechaw)).italics()
+mensaje += "<BR>Viendo pagina de "
+mensaje += SacaJornada(fechaw) + "."
+document.write(mensaje)
+</SCRIPT></p>
+<!--***FIN DE FECHA***-->
+</FONT>
+
+
+<BODY BGCOLOR="BLACK">
+
+<CENTER>
+<br><br><br><br><br><br><br>
+<IMG SRC="oddi.gif" ALT="ODDI">
+
+<!--***TEXTO***-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 100; 
+str= "!!!! UN HOMBRE NO ES HOMBRE, <BR>SI SU NOMBRE NO ES PRONUNCIADO <BR>X LOS LABIOS DE UNA MUJER !!!!"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="COMIC SANS MS" color="WHITE">'+msg.fontsize(4)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="comic sans ms" color="WHITE">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 330px; top: 460px"></span>
+<!--***FIN DE TEXTO***-->
+
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+
+<FONT FACE="COMIC SANS MS" COLOR="WHITE" SIZE=2>
+<BR><BR><BR><BR><BR>
+
+</TD>
+</TR>
+</TABLE>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript">
+puchtit="  <<<  A    B  E  B  É    >>>  ";
+letrero1=" Disfruten esta pagina     ";
+letrero2="Hola a todos     ";ultimo1=letrero1.length-1;
+ultimo2=letrero2.length-1;
+tiempo=setTimeout("scroll()",70);
+function scroll()
+{
+	aux1=letrero1.charAt(ultimo1-1);
+	letrero1=aux1+letrero1.substring(0,ultimo1-1);
+	aux2=letrero2.charAt(0);
+	letrero2=letrero2.substring(1,ultimo2+1)+aux2;
+	window.status="(" + letrero2 + puchtit + letrero1 + ")";
+	tiempo=setTimeout("scroll()",70);
+	return true;
+}
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+
+<br><br><br><br>
+<embed src="chiquitita.mp3" width="0" height="0">
+
+

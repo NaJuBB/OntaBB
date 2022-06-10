@@ -1,0 +1,117 @@
+<html> 
+<head>
+<title>Óleo de mujer con sombreo</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "SILVIO RODRIGUEZ......"
+ar[2] = "SU FAVORITO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=5>Óleo de mujer con sombrero...
+<font size=1>Silvio Rodriguez</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Una mujer se ha perdido<br>
+conocer el delirio y el polvo<br>
+<br>
+Se ha perdido esta bella locura<br>
+Su breve cintura debajo de mí<br>
+<br>
+Se ha perdido mi forma de amar<br>
+Se ha perdido mi huella en su mar.<br>
+<br>
+Veo una luz q' vacila<br>
+Y promete dejarnos a obscuras<br>
+<br>
+Veo un perro ladrando a la luna<br>
+Con otra figura q' recuerda a mí<br>
+<br>
+Veo más: veo q' no me halló<br>
+Veo más: veo q' se perdió.<br>
+<br>
+La cobardía es asunto<br>
+De los hombres no de los amantes<br>
+<br>
+Los amores cobardes no llegan a amores<br>
+Ni a historias se quedan allí<br>
+<br>
+Ni el recuerdo los puede salvar<br>
+Ni el mejor orador conjugar.<br>
+<br>
+Una mujer innombrable<br>
+Huye como una gaviota<br>
+<br>
+Y yo rápido seco mis botas<br>
+Blasfemo una nota y apago el reloj<br>
+<br>
+Q' me tenga cuidado el amor<br>
+Q' le puedo cantar su canción.<br>
+<br>
+Una mujer con sombrero<br>
+Como un cuadro del viejo Chagall<br>
+<br>
+Corrompiéndose al centro del miedo<br>
+Y yo, q' no soy bueno me puse a llorar.<br>
+<br>
+Pero entonces lloraba x mí<br>
+Y ahora lloro x verla morir...<br>
+<br>
+Pero entonces lloraba x mí<br>
+Y ahora lloro x verla morir.<br>
+
+
+<BR><BR>
+<HR>
+<BR><BR>
+<embed src="oleo de mujer con sombrero.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

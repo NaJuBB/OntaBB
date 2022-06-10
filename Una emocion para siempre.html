@@ -1,0 +1,125 @@
+<html> 
+<head>
+<title>Una emoción para siempre
+</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "UNA EMOCIÓN PARA SIEMPRE............"
+ar[1] = "EROZ RAMAZZOTI............"
+ar[2] = "AHHH BB!!!...ESTA CANCIÓN!!!!!......"
+ar[3] = "FUE LA 1RA Q ME DEDICO X INTER......"
+ar[4] = "TE ACUERDAS?......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Una emoción para siempre...
+<font size=1>Eroz Ramazzoti</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Me gustaría recordarte así <br>
+Con la sonrisa enamorada <br>
+Como si el sol hubiese salido aquí <br>
+Dentro de tu mirada <br>
+<br>
+Me gustaría recordarte ya ves  <br>
+Como una historia importante y sincera <br>
+Aunq' sé bien el sentimiento  <br>
+Ahora es como brisa ligera <br>
+<br>
+Estoy pensando en palabras de adiós q' dan <br>
+Un dolor intenso  <br>
+Pero si buscas en él sé q' encontrarás  <br>
+Agua en el desierto <br>
+<br>
+Hay amores q' te darán  <br>
+Una emoción para siempre <br>
+Momentos q' quedarán así  <br>
+Grabados en la mente <br>
+<br>
+Hay amores q' dejarán  <br>
+Una canción para siempre <br>
+Palabras q' quedarán así <br>
+Muy dentro de la gente <br>
+<br>
+Me gustaría poder dar mucho más <br>
+Mucho más tiempo del q' puedo darte <br>
+Pero en mi mundo no estás tan sólo tú  <br>
+Y ahora debo dejarte <br>
+<br>
+Cruzaré mares y montes q' ahora yo <br>
+Quiero ver de nuevo <br>
+Muchos amigos me esperan para inventar <br>
+Juntos otros juegos <br>
+<br>
+Hay amores q' te darán <br>
+Una emoción para siempre <br>
+Momentos que quedarán así <br>
+Grabados en la mente <br>
+<br>
+Hay amores q' dejarán <br>
+Una canción para siempre <br>
+Palabras q' quedarán así <br>
+Muy dentro de la gente... <br>
+Muy dentro de la gente <br>
+<br>
+Hay amores q' te darán <br>
+Una emoción para siempre <br>
+Momentos bellos q' quedarán así <br>
+Grabados en la mente <br>
+<br>
+Palabras q' quedarán así <br>
+Muy dentro de la gente... <br><br>
+
+<HR>
+<BR><BR>
+<embed src="una emoción para siempre.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

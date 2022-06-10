@@ -1,0 +1,116 @@
+<html> 
+<head>
+<title>Tengo</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "DESDE AGUAS............"
+ar[1] = "KILOMETROS......"
+ar[2] = "TE EXTRAÑE!!!!....=(..."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=5>Tengo...
+<font size=1>Franco d Vita</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Tengo un asiento reservado<BR>
+En un banco abandonado<BR>
+Donde me dejaste tú.<BR>
+<BR>
+Tengo un boleto de ida y vuelta<BR>
+Hasta tu misma puerta<BR>
+Para verte salir.<BR>
+<BR>
+Tengo unas 500 horas sin dormir<BR>
+Un cuento sin final feliz<BR>
+Pero tengo cada uno de los besos<BR>
+Q tú me dejaste aquí.<BR>
+<BR>
+Tengo un corazón q se le olvido<BR>
+Q ya no queda nada entre tú y yo<BR>
+Tengo q seguir contigo o sin ti<BR>
+Si en tu vida ya no hay sitio para mí.<BR>
+<BR>
+Tengo una historia x ocultar<BR>
+Una vida adulterada<BR>
+Y tantos sueños sin abrir.<BR>
+<BR>
+Tengo tu voz q da vueltas<BR>
+En mi cabeza<BR>
+Tengo servida la mesa<BR>
+X si quieres venir.<BR>
+<BR>
+Tengo todo aquello q aprendí de ti<BR>
+Y ¿Como puedo deshacer<BR>
+Todos los buenos momentos<BR>
+Q tú me has hecho vivir?<BR>
+<BR>
+Tengo un corazón q se le olvido<BR>
+Q ya no queda nada entre tu y yo<BR>
+Tengo q seguir contigo o sin ti<BR>
+Si en tu vida ya no hay sitio para mí.<BR>
+<BR>
+Tengo lo q quedo<BR>
+Lo q a ti te sobra<BR>
+Lo q a mi me basta para ser feliz<BR>
+Tengo lo q soy.<BR>
+<BR>
+Tengo un corazón q se le olvido<BR>
+Q ya no queda nada entre tú y yo<BR>
+Tengo q seguir contigo o sin ti<BR>
+Si en tu vida ya no hay sitio para mí.
+<BR>
+<BR><BR>
+<HR>
+<BR><BR>
+<embed src="Tengo.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

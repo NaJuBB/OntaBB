@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>Amar en Silencio</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: 0033CC; SCROLLBAR-HIGHLIGHT-COLOR: SKYBLUE; SCROLLBAR-SHADOW-COLOR: SKYBLUE; SCROLLBAR-3DLIGHT-COLOR: SKYBLUE; SCROLLBAR-ARROW-COLOR: SKYBLUE; SCROLLBAR-TRACK-COLOR: SKYBLUE; SCROLLBAR-DARKSHADOW-COLOR: SKYBLUE }</style>
+</HEAD>
+
+<BODY BGCOLOR="SKYBLUE">
+<HR>
+
+<!--***TEXTO*-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 90; 
+str= "Amar en silencio es comprender q’ nunca <BR>Se podrá tener lo q’ se ansia querer<BR>Como duele anhelar los brazos de alguien<BR>Q' sabrás nunca podrá estrecharte.<BR><BR>Amar en silencio es ocultar un amor intenso<BR>Algo mas q’ un simple sentimiento<BR>Un amor q’ no conoce mentiras piadosas<BR>Un amor q’ crece en mis costillas.<BR><BR>Amar en silencio es mantener unido un cariño<BR>Un lazo de amistad q’ florece en su andar<BR>Una sed inmensa de la distancia cortar<BR>Un amor q’ se apoya en mi espalda.<BR><BR>Amarte en silencio es contemplar de lejos el amor<BR>Como duele hasta el alma decir adiós<BR>Como duele en el pecho un amor así<BR>Como entristece saber q’ nunca serás para mi.<BR><BR>Amar en silencio es verte y no poder verte<BR>Quererte cuando se q’ no debo quererte<BR>Amarte cuando mi razón me dice q’ no te ame<BR>Tener q’ callarme cuando ya no puedo aguantarme.<BR><BR>Amar en silencio es un suspiro mas q’ interno<BR>Saber q’ te amo y q’ tu no podrás amarme<BR>Saber q’ te quiero y tu nunca podrás quererme<BR>Saber q’ te extraño y tu nunca podrás entenderme.<BR><BR>Amar en silencio es un llanto callado ingenuo<BR>Es una lágrima en este valle de olvidados<BR>Es cargar una cruz de un verdadero amor<BR>Q’ jamás podrá llegar a ser.<BR><BR>Amar en silencio es poner la mano en mi corazón<BR>Decirte desde mi ser q’ te amo<BR>Aunque tu no sepas lo q’ me esta pasando<BR>Aunque no sepas cuanto te estoy amando<BR>Amar en silencio es ocultar q’ te quiero.<BR>"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="COMIC SANS MS" color="BLUE">'+msg.fontsize(4)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="comic sans ms" color="BLUE">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 100px; top: 50px"></span>
+<!--***FIN DE TEXTO*-->
+
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<HR>
+<CENTER>
+ <embed src="Amarte es un placer.mp3" width="0" height="0">
+

@@ -1,0 +1,122 @@
+<HTML>
+<HEAD>
+<TITLE>Mensajes...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "AHHH BEBÉ!!!!!..............."
+ar[1] = "TE ACUERDAS DE TODO ESTO????????......"
+ar[2] = "LAS VECES Q' NO TOY!!!!......."
+ar[3] = "Y ME DEJAS MENSAJE???????......."
+ar[4] = "AHHHH BEBÉ!!!!!!......."
+ar[5] = "TE AMOOOOOOOOO!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</HEAD>
+
+<BODY BACKGROUND="truenos.gif" BGPROPERTIES="FIXED"  LINK="WHITE">
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>ESTOS SON LOS MENSAJES DE BEBÉ CUANDO NO ME ENCUENTRA....
+
+</CENTER>
+<BR>
+
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="070404.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 070404'.....<BR><BR>
+
+<a href="240504.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 240504'.....<BR><BR>
+
+<a href="050604.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 050604'.....<BR><BR>
+
+<a href="050604-2.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 050604-2'.....<BR><BR>
+
+<a href="110704.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="red"> 110704'.....<BR><BR>
+
+<a href="150704.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="red"> 150704'.....<BR><BR>
+
+<a href="010904.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 010904'.....<BR><BR>
+
+<a href="111004.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 111004'.....<BR><BR>
+
+<a href="201004.mp3" target=_black><img src="C_AMARILLO.JPG" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 201004'.....<BR><BR>
+
+<a href="011104.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 011104'.....<BR><BR>
+
+<a href="041104.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="red"> 041104'.....<BR><BR>
+
+<a href="061104.mp3" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 061104'.....<BR><BR>
+
+<a href="051204.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 051204'.....<BR><BR>
+
+<a href="010105.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 010105'.....<BR><BR>
+
+<a href="270105.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="red"> 270105'.....<BR><BR>
+
+<a href="310105.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 310105'.....<BR><BR>
+
+<a href="150205.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 150205'.....<BR><BR>
+
+<a href="160205.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 160205'.....<BR><BR>
+
+<a href="130405.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 130405'.....<BR><BR>
+
+<a href="camino a aguas....mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Camino a Aguas...070505'<BR><BR>
+
+<a href="el panda.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> El Panda...291105'<BR><BR>
+
+<a href="2006.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> 2006'<BR><BR>
+
+<a href="bbyyo.mp3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> BB y YO<BR><BR>
+
+<BR>
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>ESTAS HAN SIDO SERENATAS X CEL!!!....=)...AUNQ UD NO LO CEA!!!....
+</FONT>
+</CENTER>
+<BR>
+
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="Y JAJA....bb.MP3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Y JAJAJA...2007'<BR><BR>
+
+<a href="SERENATA.MP3" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> DESPIERTA<BR><BR>

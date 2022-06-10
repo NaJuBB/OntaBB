@@ -1,0 +1,89 @@
+<HTML>
+<HEAD>
+<TITLE>ESCRITOS</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "ESTO ES TODO LO ESCRITO..............."
+ar[1] = "YA SEA X MAIL!!!!......"
+ar[2] = "O X CARTAS!!!!......."
+ar[3] = "ESCRITOS TRISTES......."
+ar[4] = "PERO TAMBIEN RECUERDOS......."
+ar[5] = "MUY PADRES...X EJEMPLO???....."
+ar[6] = "LO Q PLATICABAMOS..."
+ar[7] = "RECUERDAS?"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+
+<!--***VENTANA***-->
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana() {
+var Nueva = window.open("021105.swf","","status,height=350,width=500")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = true
+}
+</SCRIPT>
+<!--***FIN DE VENTANA***-->
+</HEAD>
+
+<BODY BGCOLOR="BLACK">
+
+<FONT FACE="COMIC SANS MS" SIZE=3 COLOR="WHITE">
+<BR>
+<CENTER>
+
+<A HREF="mails.doc" target=_black><IMG SRC="email.gif" WIDTH="10%" ALT="NUESTROS MAILS!!!"></A>
+<br><br>
+<A HREF="mensajero.doc" target=_black><IMG SRC="mensajero.gif" WIDTH="10%" ALT="NUESTRAS PLATICAS!!!"></A>
+<br><br>
+<A HREF="msj cel.doc" target=_black><IMG SRC="telmano.gif" WIDTH="7%" ALT="NUESTROS MENSAJES X CEL!!!"></A>
+<br><br>
+Pero esto no tiene igual...chequen xq!!!!
+<br><br>
+<A HREF="mi foto.html" target=_black><IMG SRC="p.gif" WIDTH="10%" ALT="NUESTROS MENSAJES X CEL!!!"></A>
+
+
+<BR>
+

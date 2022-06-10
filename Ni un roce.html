@@ -1,0 +1,144 @@
+<html>
+<head>
+<title>Ni un roce</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "NI UN ROCE..........."
+ar[1] = "ANA GABRIEL......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<marquee behavior="slide"><font face="comic sans ms" size=6 color="white">Ni un roce...
+<font size=1>Yooo</font></marquee><hr></font>
+<font face="comic sans ms" size=2 color="white">
+<center>
+Tantas cosas x decir<BR>
+Pero tu no te propones<BR>
+No lo entiendo<BR>
+Todo va quedando así<BR>
+<BR>
+Siempre estas como si nada<BR>
+Me confunde tu mirada<BR>
+Vas y vienes<BR>
+Y todo va quedando así<BR>
+<BR>
+Cuando estas con tus amigos<BR>
+Haces cosas q me agravan<BR>
+Haces todo<BR>
+X llamar mi atención....así<BR>
+<BR>
+Acaricias tu cabello<BR>
+Y me ves x el espejo<BR>
+Y haces todo<BR>
+X llamar mi atención <BR>
+<BR>
+Veo una pareja a mi lado<BR>
+Besos y abrazos apretados<BR>
+Y yo esperando q me<BR>
+Quieras tener<BR>
+<BR>
+Uno de nosotros va a rendirse<BR>
+Uno va a tener q decidirse<BR>
+Mientras tu mirada me busca<BR>
+Otra vez<BR>
+<BR>
+No me puedo contener<BR>
+Ni un roce<BR>
+Y yo queriendo<BR>
+Llenarme de placer<BR>
+Ni un roce<BR>
+Y yo soñando<BR>
+Con lo q pueda ser<BR>
+Ni un roce<BR>
+Y yo buscando<BR>
+Aquí en mi boca tu sabor<BR>
+Ni un roce<BR>
+Y tu queriendo<BR>
+Hacerme el amor<BR>
+<BR>
+Cuando estas con tus amigos<BR>
+Haces cosas q me agravan<BR>
+Haces todo<BR>
+X llamar mi atención<BR>
+<BR>
+Acaricias tu cabello<BR>
+Y me ves x el espejo<BR>
+Y haces todo<BR>
+X llamar mi atención…pasión<BR>
+<BR>
+Veo una pareja a mi lado<BR>
+Besos y abrazos apretados<BR>
+Y yo esperando q me<BR>
+Quieras tener<BR>
+<BR>
+Uno de nosotros va a rendirse<BR>
+Uno va a tener q decidirse<BR>
+Mientras tu mirada me busca<BR>
+Otra vez<BR>
+<BR>
+No me puedo contener<BR>
+Ni un roce<BR>
+Y yo queriendo<BR>
+Llenarme de placer<BR>
+Ni un roce<BR>
+Y yo soñando<BR>
+Con lo q pueda ser<BR>
+Ni un roce<BR>
+Y yo buscando<BR>
+Aquí en mi boca tu sabor<BR>
+Ni un roce<BR>
+Y tú queriendo<BR>
+<BR>
+Ni un roce<BR>
+Y yo queriendo<BR>
+Mucho placer<BR>
+Enamorada de ti<BR>
+Uhhohhh <br>
+<BR>
+<BR>
+<BR>
+<HR>
+<BR><BR>
+ <embed src="Ni un roce.mp3" width="300" height="45">

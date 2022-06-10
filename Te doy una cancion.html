@@ -1,0 +1,101 @@
+<html> 
+<head>
+<title>Te doy una canción</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "ES MI BEBÉ!!!!!......"
+ar[2] = "MI FAVORITO!!!......."
+ar[3] = "Q BIEN CANTA NO? =)......."
+ar[4] = "Y Q VOZZZZ?........."
+ar[5] = "WOOOUUUU!!!!  =)......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<BODY BACKGROUND="silvio.bmp" BGPROPERTIES="FIXED"  LINK="WHITE">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=5>Te doy una canción...
+<font size=1>Mi BEBÉ</font></marquee></font></MARQUEE>
+<HR>
+<BR><p align="right">
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+....detengo<br>
+La ciudad se derrumba y yo cantando<br>
+La gente q me odia y q me quiere<br>
+No me va a perdonar q me distraiga<br>
+<br>
+Creen q lo digo todo<br>
+Q me juego la vida<br>
+Xq no te conocen<br>
+Ni te sienten<br>
+<br>
+Te doy una canción<br>
+Y hago un discurso<br>
+Sobre mi derecho a hablar<br>
+Te doy una canción<br>
+Con mis dos manos<br>
+Con las mismas de matar<br>
+<br>
+Te doy una canción<br>
+y digo: Patria<br>
+Y sigo hablando para ti<br>
+Te doy una canción<br>
+Como un disparo, como un libro<br>
+Una palabra, una guerrilla...<br>
+Como doy el amor...<br><br>
+"No la habias escuchado completa?<br>
+No?<br>
+Esta buena no?"<br>
+<br><br>
+
+<center>
+<BR><BR>
+<HR>
+<BR><BR><BR><BR><BR><BR>
+<embed src="te doy una cancion.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

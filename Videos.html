@@ -1,0 +1,230 @@
+<html> 
+<head>
+<title>Videos...</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #000000; SCROLLBAR-SHADOW-COLOR: #000000; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #000000; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "AHHH BEBÉ!!!!!..............."
+ar[1] = "RECUERDAS TODO ESTO????????......"
+ar[2] = "TODO LO Q HEMOS PASADO!!!!......."
+ar[3] = "JUNTOS!!!!!......"
+ar[4] = "AHHHH BEBÉ!!!!!!......."
+ar[5] = "TE AMOOOOOOOOO!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+
+
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana1() {
+var Nueva = window.open("fogata.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana2() {
+var Nueva = window.open("asi.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana3() {
+var Nueva = window.open("atos.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana4() {
+var Nueva = window.open("atos1.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana5() {
+var Nueva = window.open("atos2.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana6() {
+var Nueva = window.open("atos3.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana7() {
+var Nueva = window.open("atos4.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana8() {
+var Nueva = window.open("atos5.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana9() {
+var Nueva = window.open("barney.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana11() {
+var Nueva = window.open("LAU.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+</head>
+
+<body bgcolor="black" link="black" vlink="black">
+<font color="00FFff" FACE="chiller" SIZE=7>
+<center>
+
+
+<center>
+ <INPUT onclick=CrearVentana1() type=IMAGE SRC="fogata.bmp" WIDTH="20%" ALT="FOGATA!!!....." name=newOne> 
+</CENTER>
+
+<center>
+ <INPUT onclick=CrearVentana2() type=IMAGE SRC="asi.bmp" WIDTH="20%" ALT="ASI BAILA MI BB!!!!....." name=newOne> 
+</CENTER>
+
+
+<center>
+ <INPUT onclick=CrearVentana3() type=IMAGE SRC="atos.bmp" WIDTH="14%" ALT="ATOS!!!!....." name=newOne> 
+
+
+ <INPUT onclick=CrearVentana4() type=IMAGE SRC="atos1.bmp" WIDTH="15%" ALT="ATOS!!!!....." name=newOne> 
+
+
+ <INPUT onclick=CrearVentana5() type=IMAGE SRC="atos2.bmp" WIDTH="15%" ALT="ATOS!!!!....." name=newOne> 
+
+
+
+
+ <INPUT onclick=CrearVentana6() type=IMAGE SRC="atos3.bmp" WIDTH="15%" ALT="ATOS!!!!....." name=newOne> 
+
+
+
+
+ <INPUT onclick=CrearVentana7() type=IMAGE SRC="atos4.bmp" WIDTH="15%" ALT="ATOS!!!!....." name=newOne> 
+
+
+
+
+ <INPUT onclick=CrearVentana8() type=IMAGE SRC="atos5.bmp" WIDTH="15%" ALT="ATOS!!!!....." name=newOne> 
+
+
+
+<center>
+ <INPUT onclick=CrearVentana9() type=IMAGE SRC="BARNEY.bmp" WIDTH="20%" ALT="BARNEY GÓMEZ!!!!....." name=newOne> 
+</CENTER>
+
+
+
+<center>
+ <INPUT onclick=CrearVentana11() type=IMAGE SRC="lau.bmp" WIDTH="20%" ALT="LAU...GRABACION DE BB!!!....." name=newOne> 
+</CENTER>

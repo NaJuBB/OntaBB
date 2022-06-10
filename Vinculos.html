@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<TITLE>Vinculos...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #33CCFF; SCROLLBAR-HIGHLIGHT-COLOR: #0066FF; SCROLLBAR-SHADOW-COLOR: #0066FF; SCROLLBAR-3DLIGHT-COLOR: #0066FF; SCROLLBAR-ARROW-COLOR: #0066FF; SCROLLBAR-TRACK-COLOR: #0066FF; SCROLLBAR-DARKSHADOW-COLOR: #0066FF }</style>
+
+<!--***SONIDO EN LINK***-->
+<script LANGUAGE="JavaScript"><!--
+
+var aySound = new Array();
+aySound[0] = "quien.mp3";
+aySound[1] = "canciones.mp3";
+aySound[2] = "poemas.mp3";
+aySound[3] = "flash.mp3";
+aySound[4] = "mensajes.mp3";
+aySound[5] = "favoritos.mp3";
+aySound[6] = "email a el.mp3";
+aySound[7] = "email a mi.mp3";
+aySound[8] = "poyo.mp3";
+aySound[9] = "FOTOS.mp3";
+aySound[11] = "22.mp3";
+aySound[10] = "ESCRITOS.mp3";
+aySound[13] = "oink.mp3";
+aySound[12] = "MUA.mp3";
+
+document.write('<BGSOUND ID="auIEContainer">')
+IE = (navigator.appVersion.indexOf("MSIE")!=-1 && document.all)? 1:0;
+NS = (navigator.appName=="Netscape" && navigator.plugins["LiveAudio"])? 1:0;
+ver4 = IE||NS? 1:0;
+onload=auPreload;
+
+function auPreload() {
+if (!ver4) return;
+if (NS) auEmb = new Layer(0,window);
+else {
+Str = "<DIV ID='auEmb' STYLE='position:absolute;'></DIV>";
+document.body.insertAdjacentHTML("BeforeEnd",Str);
+}
+var Str = '';
+for (i=0;i<aySound.length;i++)
+Str += "<EMBED SRC='"+aySound[i]+"' AUTOSTART='FALSE' HIDDEN='TRUE'>"
+if (IE) auEmb.innerHTML = Str;
+else {
+auEmb.document.open();
+auEmb.document.write(Str);
+auEmb.document.close();
+}
+auCon = IE? document.all.auIEContainer:auEmb;
+auCon.control = auCtrl;
+}
+function auCtrl(whSound,play) {
+if (IE) this.src = play? aySound[whSound]:'';
+else eval("this.document.embeds[whSound]." + (play? "play()":"stop()"))
+}
+function playSound(whSound) { if (window.auCon) auCon.control(whSound,true); }
+function stopSound(whSound) { if (window.auCon) auCon.control(whSound,false); }
+//-->
+</script>
+<!--***FIN DE SONIDO EN LINK***-->
+</HEAD>
+
+
+
+<font face="comic sans ms" size=2 color="00009C">
+<marquee>
+
+<!--***DIAS DE PAGINA***-->
+<script>
+
+var montharray=new Array("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec")
+
+function countup(yr,m,d){
+var today=new Date()
+var todayy=today.getYear()
+if (todayy < 1000)
+todayy+=1900
+var todaym=today.getMonth()
+var todayd=today.getDate()
+var todaystring=montharray[todaym]+" "+todayd+", "+todayy
+var paststring=montharray[m-1]+" "+d+", "+yr
+var difference=(Math.round((Date.parse(todaystring)-Date.parse(paststring))/(24*60*60*1000))*1)
+difference+=" días"
+document.write("BB tu pagina tiene <b>"+difference+"</b>...!!!!!")
+}
+//cambiar la fecha
+countup(2004,03,19)
+</script>
+<!--***FIN DE DIAS DE PAGINA***-->
+
+</marquee>
+
+
+
+<BODY BGCOLOR="0066FF" VLINK="WHITE">
+
+
+<style type="text/css"> 
+<!-- 
+A { text-decoration: none } 
+--> </style>
+
+
+<center>
+<BR><BR>
+<FONT FACE="Chiller" SIZE=5>
+<A HREF="Principal.html" TARGET="TRES">PRINCIPAL</A><BR><BR>
+
+<A HREF="Quien es el.html" TARGET="TRES" onMouseOver="playSound(0)" onMouseOut="stopSound(0)">QUIEN ES EL?</a><BR><BR>
+
+<A HREF="Canciones.html" TARGET="TRES" onMouseOver="playSound(1)" onMouseOut="stopSound(1)">CANCIONES</a><BR><BR>
+
+<A HREF="Poemas.html" TARGET="TRES" onMouseOver="playSound(2)" onMouseOut="stopSound(2)">POEMAS</a><BR><BR>
+
+<A HREF="Flash.html" TARGET="TRES" onMouseOver="playSound(3)" onMouseOut="stopSound(3)">FLASH</a><BR><BR>
+
+<A HREF="Mensajes.html" TARGET="TRES" onMouseOver="playSound(4)" onMouseOut="stopSound(4)">MENSAJES</a><BR><BR>
+
+<A HREF="Favoritos.html" TARGET="TRES" onMouseOver="playSound(5)" onMouseOut="stopSound(5)">FAVORITOS</a><BR><BR>
+
+<A HREF="Fotos.html" TARGET="TRES" onMouseOver="playSound(9)" onMouseOut="stopSound(9)">FOTOS</a><BR><BR>
+
+<A HREF="Escritos.html" TARGET="TRES" onMouseOver="playSound(10)" onMouseOut="stopSound(10)">ESCRITOS</a><BR><BR>
+
+<A HREF="22 AÑITOS.HTML" TARGET="TRES" onMouseOver="playSound(11)" onMouseOut="stopSound(11)">22 AÑITOS</a><BR><BR>
+
+<A HREF="24 AÑITOS.HTML" TARGET="TRES" onMouseOver="playSound(11)" onMouseOut="stopSound(11)">24 AÑITOS</a><BR><BR>
+
+<A HREF="VIDEOS.HTML" TARGET="TRES" onMouseOver="playSound(11)" onMouseOut="stopSound(11)">VIDEOS</a><BR><BR><BR>
+
+
+
+<A HREF="mailto:mindwuay@hotmail.com" onMouseOver="playSound(6)" onMouseOut="stopSound(6)"><img src="EMAIL.gif" width= 100% border=2 bgcolor="blue" alt= "ENVIO DE CORREO A BEBÉ !!!!"></a><BR><BR>
+
+<A HREF="mailto:laura_ut@hotmail.com" onMouseOver="playSound(7)" onMouseOut="stopSound(7)"><img src="sobre.gif" width= 50% border=2 bgcolor="blue" alt= "ENVIAME UN CORREO !!!!"></a><BR><BR>
+
+<A HREF="poyo.gif" target=_black onMouseOver="playSound(8)" onMouseOut="stopSound(8)"><img src="POYO.gif"  width= 50% border=2 bgcolor="blue" alt= "CLICK !!!!"></a><BR><BR>
+
+<A HREF="2.gif" target=_black onMouseOver="playSound(13)" onMouseOut="stopSound(13)"><img src="2.gif"  width= 50% border=2 bgcolor="blue" alt= "JAJAJA !!!!"></a><BR><BR>
+
+<A HREF="MOSCA.gif" target=_black onMouseOver="playSound(12)" onMouseOut="stopSound(12)"><img src="MOSCA.gif"  width= 50% border=2 bgcolor="blue" alt= "TE AMO !!!!"></a><BR><BR>
+
+<A HREF="oye.gif" target=_black onMouseOver="playSound(12)" onMouseOut="stopSound(12)"><img src="oye.gif"  width= 50% border=2 bgcolor="blue" alt= "agos-07!!!!"></a><BR><BR>
+
+<A HREF="onta2.gif" target=_black onMouseOver="playSound(12)" onMouseOut="stopSound(12)"><img src="onta2.gif"  width= 50% border=2 bgcolor="blue" alt= "ago-07!!!!"></a><BR><BR>
+
+
+<center>
+

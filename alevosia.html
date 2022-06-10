@@ -1,0 +1,111 @@
+<html> 
+<head>
+<title>Alevosia</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "LUIS EDUARDO AUTE......"
+ar[2] = "TAMBIÉN  FAVORITO......."
+ar[3] = "ESTA CANCIÓN ME LA DEDICO ANTES DE CONOCERLO EN PERSONA......."
+ar[4] = "Y X CULPA DE ESTA CANCIÓN LO BESE!!!!!......."
+ar[5] = "MMMMMM.......LA 1ERA VEZ Q' PROBE SUS LABIOS!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO*-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Alevosia...
+<font size=1>Eduardo Aute</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Mas q' amor lo q' siento x ti<BR>
+Es el mal del animal<BR>
+No la terquedad del jabali<BR>
+Ni la furia del chacal...<BR>
+<BR>
+Es el alma q' se encela <BR>
+Con instinto criminal<BR>
+Es amar, hasta q' duela<BR>
+Como un golpe de puñal<BR>
+Ay, amor, ay, dolor...<BR>
+Yo te quiero con alevosia<BR>
+Yo te quiero con alevosia<BR>
+<BR>
+Necesito confundir tu piel<BR>
+Con el frio del metal<BR>
+O tal vez con el destello cruel<BR>
+De un fragmento de cristal<BR>
+<BR>
+Quiero q' tus sentimientos <BR>
+Sean puro mineral<BR>
+Polvo de cometa al viento<BR>
+Del espacio sideral<BR>
+Ay, amor, ay, dolor...<BR>
+Yo te quiero con alevosia<BR>
+yo te quiero con alevosia<BR>
+<BR>
+Nada envidio a la voracidad<BR>
+De tu amante más letal<BR>
+Ella espera tu fatalidad<BR>
+Yo pretendo lo inmortal<BR>
+<BR>
+El espiritu q' habita<BR>
+Tu belleza mas carnal<BR>
+Esa luz q' resucita<BR>
+El pecado original<BR>
+Ay, amor, ay, dolor...<BR>
+<BR>
+Yo te quiero con alevosia<BR>
+Yo te quiero con alevosia<BR>
+Yo te quiero con alevosia<BR>
+Yo te quiero con alevosia<BR><BR>
+<HR>
+<BR><BR>
+<embed src="alevosia.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

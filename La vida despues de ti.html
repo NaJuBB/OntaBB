@@ -1,0 +1,124 @@
+<html> 
+<head>
+<title>La vida despues de ti</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "LA VIDA DESPUES DE TI..........."
+ar[1] = "LU......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO*-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>La vida despues de ti...
+<font size=1>Lu</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Te ame…más de lo normal y pensé<br>
+q nuestro amor era infinito<br>
+Como el universo y hoy<br>
+Se reduce a un verso<br>
+<br>
+No se…ni donde ni como estaré <br>
+Ahora, q te has ido<br>
+Mi corazón, se fue contigo<br>
+No se, no se q hacer conmigo<br>
+<br>
+Quiero olvidar q algún día<br>
+Me hiciste feliz<br>
+Pero es inútil fingir<br>
+No puedo, no puedo…<br>
+No puedo vivir sin ti<br>
+<br>
+La vida después de ti<br>
+Es un castigo…sin fin<br>
+Y no sobreviviré<br>
+Mi cuerpo…sin tu cuerpo<br>
+Antes y después de ti…<br>
+<br>
+Nada…es igual, para mi<br>
+Me obligo a vivir en duelo<br>
+Y no sobreviviré…<br>
+Mi recuerdo…sin tu recuerdo<br>
+Así es la vida…la vida después de ti<br>
+<br>
+Diré…q esto no esta matándome<br>
+Pero eso no es cierto<br>
+Me he vuelto…un fantasma eterno<br>
+Q habita…en tu recuerdo<br>
+<br>
+Y así, lo q un día fue…ya no es<br>
+Maldita mi suerte de solo <br>
+en sueños verte<br>
+De amarte<br>
+De amarte y de perderte<br>
+<br>
+Quiero olvidar q algún día<br>
+Me hiciste feliz<br>
+Pero es inútil fingir<br>
+No puedo, no puedo…<br>
+No puedo vivir sin ti<br>
+<br>
+La vida después de ti<br>
+Es un castigo…sin fin<br>
+Y no sobreviviré<br>
+Mi cuerpo…sin tu cuerpo<br>
+Antes y después de ti…<br>
+<br>
+Nada…es igual, para mí<br>
+Me obligo a vivir en duelo<br>
+Y no sobreviviré…<br>
+Mi recuerdo…sin tu recuerdo<br>
+Así es la vida…la vida después de ti.<br>
+<br>
+<HR>
+<BR><BR>
+<embed src="la vida despues de ti.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

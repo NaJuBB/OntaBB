@@ -1,0 +1,186 @@
+<HTML>
+<HEAD>
+<TITLE>Canciones...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "KEREN SABER CUALES SON SUS CANCIONES????????............"
+ar[1] = "PUES CHEKENLO!!!!!......"
+ar[2] = "Y ESCUCHENLAS......."
+ar[3] = "LAS Q' LE GUSTAN......."
+ar[4] = "Y LAS Q' LE DEDICO!!!!!......."
+ar[5] = "CLICKEEN!!!!!...EHHHH"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO*-->
+</HEAD>
+
+<BODY BACKGROUND="truenos.gif" BGPROPERTIES="FIXED"  LINK="WHITE">
+
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>ESTAS SON ALGUNAS CANCIONES FAVORITAS DE BEBÉ....
+<BR><BR>
+</CENTER>
+
+<BR>
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="Playa giron.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> PLAYA GIRÓN.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="Alevosia.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE">ALEVOSIA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>EDUARDO AUTE</FONT><BR><BR>
+
+<a href="yolanda.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> YOLANDA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2> SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="Oleo de mujer con sombrero.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> ÓLEO DE MUJER CON SOMBRERO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="Y al final.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Y AL FINAL.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ENRIQUE BUMBURY</FONT><BR><BR>
+
+<a href="La familia, la propiedad privada.html" TARGET=_BLACK><img src="C_AMARILLO.JPG" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE" SIZE=4> LA FAMILIA, LA PROPIEDAD PRIVADA Y EL AMOR.....</FONT><FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2> SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="La vida no es =.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> LA VIDA NO ES =.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>JAGUARES</FONT><BR><BR>
+
+<a href="Llueve otra vez.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> LLUEVE OTRA VEZ.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2> SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="Una emocion para siempre.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> UNA EMOCIÓN PARA SIEMPRE.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>EROZ RAMAZZOTI</FONT><BR><BR>
+
+<a href="Mi unicornio azul.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> MI UNICORNIO AZUL.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SILVIO RODRIGUEZ</FONT><BR><BR>
+<br>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>Y ESTAS SON ALGUNAS CANCIONES DE MIIII...PA' ÉLLLL...
+<BR><BR>
+</CENTER>
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="Sin tu latido.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> SIN TU LATIDO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>LUIS EDUARDO AUTE</FONT><BR><BR>
+
+<a href="Y aqui estoy.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Y AQUI ESTOY.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="Q lloro.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Q LLORO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SIN BANDERA</FONT><BR><BR>
+
+<a href="Algo mas.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> ALGO +.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>LA 5TA ESTACIÓN</FONT><BR><BR>
+
+<a href="Quien diria.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> QUIEN DIRIA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>RICARDO ARJONA</FONT><BR><BR>
+
+<a href="Si pruebas una vez.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> SI PRUEBAS UNA VEZ.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>HA-ASH</FONT><BR><BR>
+
+<a href="Si puedo volverte a ver.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> SI PUEDO VOLVERTE A VER.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>MIGUEL BOSE/BENNY IBARRA</FONT><BR><BR>
+
+<a href="Cada vez q me amas.html" target=_black><img src="C_AMARILLO.JPG" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> CADA VEZ Q ME AMAS.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>LUIS EDUARDO AUTE</FONT><BR><BR>
+
+<a href="Miedo.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> MIEDO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>PEPÉ AGUILAR</FONT><BR><BR>
+
+<a href="Te amare.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> TE AMARÉ.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SILVIO RODRIGUEZ</FONT><BR><BR>
+
+<a href="Olvidarte.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE">OLVIDARTE.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>RICARDO ARJONA</FONT><BR><BR>
+
+<a href="Me estoy enamorando.HTML" TARGET=_BLACK><img src="C_AMARILLO.JPG" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> ME ESTOY ENAMORANDO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="KISS ME.HTML" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> KISS ME.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SIXPENCE NONE THE RICHER</FONT><BR><BR>
+
+<a href="ME FALTA VALOR.html" TARGET=_BLACK> <img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> ME FALTA VALOR.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>PEPÉ AGUILAR</FONT><BR><BR>
+
+<a href="Luna.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> LUNA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="q me alcance la vida.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> Q ME ALCANCE LA VIDA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SIN BANDERA</FONT><BR><BR>
+
+<a href="Tengo.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> TENGO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>fRANCO D VITA</FONT><BR><BR>
+
+<a href="TE NECESITO.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> TE NECESITO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>SHAKIRA</FONT><BR><BR>
+
+<a href="LA VIDA DESPUES DE TI.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> LA VIDA DESPUES DE TI.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>LU</FONT><BR><BR>
+
+<a href="BENDITA LA LUZ.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> BENDITA LA LUZ.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>MANA/JUANLUIS GUERRA</FONT><BR><BR><BR>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>Y ESTAS SON...CUANDO LO EXTRAÑO...
+<BR><BR>
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+</CENTER>
+<a href="Amor del bueno.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> AMOR DEL BUENO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>REYLI</FONT><BR><BR>
+
+<a href="Toma la luna.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> TOMA LA LUNA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>EROZ RAMAZZOTI</FONT><BR><BR>
+
+<a href="Solo quiero ser amada.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> SOLO QUIERO SER AMADA.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="Nothing at all.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> NOTHING AT ALL.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>RONAN KEATHING</FONT><BR><BR>
+
+<a href="Mi media mitad.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> MI MEDIA MITAD.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>YOOOO</FONT><BR><BR>
+
+<a href="Si me ves llorar x ti.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> SI ME VES LLORAR X TI.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>CRISTIAN</FONT><BR><BR>
+
+<a href="Llevame.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> LLEVAME.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="Una y mil veces.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> UNA Y MIL VECES.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>CRISTIAN</FONT><BR><BR>
+
+<a href="Ay amor.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> AY AMOR.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="QUEDATE.HTML" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> QUEDATE CONMIGO ESTA NOCHE.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ROCIO DURCAL</FONT><BR><BR>
+
+<a href="X amarte asi.HTML" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> X AMARTE ASI.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>CRISTIAN</FONT><BR><BR>
+
+<a href="Xq es tan cruel el amor.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> XQ ES TAN CRUEL EL AMOR.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>RICARDO ARJONA</FONT><BR><BR>
+
+<a href="A tu lado.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> A TU LADO.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<a href="Ni un roce.html" TARGET=_BLACK><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> NI UN ROCE.....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2>ANA GABRIEL</FONT><BR><BR>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>PERO ESTA NO TIENE IGUAL...
+ES + Q MI FAVORITA!!!!....
+ME ENCANTO!!!!!....CHEQUEN XQ.....
+
+</CENTER>
+<BR>
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="Te doy una cancion.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> TE DOY UNA CANCIÓN....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2> MI BEBÉ</FONT><BR><BR>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>ESTO FUE DESDE AGUAS...
+=(.........
+
+</CENTER>
+<BR>
+<FONT FACE="Bradley Hand ITC" COLOR="SKYBLUE" SIZE=5>
+
+<a href="Kilometros.html" target=_black><img src="c_amarillo.jpg" ALT="CLICK!!!!!"><A/><FONT COLOR="WHITE"> DESDE AGUAS....<FONT FACE="Staccato222 BT" COLOR="SKYBLUE" SIZE=2> YOOO</FONT><BR><BR>
+

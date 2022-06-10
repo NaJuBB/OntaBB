@@ -1,0 +1,113 @@
+<html> 
+<head>
+<title>Si pruebas una vez</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "SI PRUEBAS UNA VEZ............"
+ar[1] = "HA-ASH......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Si pruebas una vez...
+<font size=1>Ha-Ash</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Y si tú notas q' he cambiado <br>
+Ahora no es casualidad <br>
+No soy la misma, me cuesta confesar <br>
+Es q' hace tiempo q' <br>
+Ya no te veo = <br>
+Me empiezo a enamorar <br>
+<br>
+Antes te tuve a mi lado <br>
+Como el amigo siempre fiel <br>
+Y ahora q' no estas aquí <br>
+Llame para decirte  <br>
+X teléfono <br>
+Te necesito aquí <br>
+ <br>
+Ya no puedo estar sin ti <br>
+Me vuelvo loca <br>
+A ciegas sin pensar te deje marchar <br>
+Y si tú quieres, si lo quieres <br>
+Lo podemos intentar <br>
+Si pruebas una vez <br>
+Te puedo enamorar <br>
+<br>
+Nunca vi cuanto me amabas...noo ooo <br>
+Nunca te supe valorar <br>
+Ahora es mi turno  <br>
+De luchar x ti <br>
+Regresa de una vez <br>
+Te necesito aquí <br>
+<br>
+Ya no puedo estar sin ti <br>
+Me vuelvo loca <br>
+A ciegas sin pensar te deje marchar <br>
+Y si tú quieres, si lo quieres <br>
+Lo podemos intentar <br>
+Si pruebas una vez <br>
+Te puedo enamorar <br>
+<br>
+Sin ti <br>
+Me vuelvo loca <br>
+A ciegas sin pensar te deje marchar <br>
+Y si tú quieres, si lo quieres <br>
+Lo podemos intentar <br>
+Si pruebas una vez <br>
+Te puedo enamorar... <br>
+Te puedo enamorar <br><br>
+
+<HR>
+<BR><BR>
+<embed src="si pruebas una vez.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

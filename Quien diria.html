@@ -1,0 +1,103 @@
+<html> 
+<head>
+<title>Quien diria</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "QUIEN DIRIA............"
+ar[1] = "RICARDO ARJONA......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Quien diria...
+<font size=1>Ricardo Arjona</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Quien diría q' el mink y la mezclilla <br>
+Podrían fundirse un día...quien diría <br>
+Tu caviar y yo tortilla...quien diría <br>
+Parece q' el amor no entiende de plusvalias <br>
+ <br>
+Tú vas al banco y yo prefiero la alcancía <br>
+Oigo Serrat y tú prefieres locomia  <br>
+Tu vas al punto yo voy x la fantasía <br>
+Parece q' el amor no entiende de ironías <br>
+<br>
+Quien diría, quien diría q' son años <br>
+Los q' ya llevamos juntos de la mano <br>
+Quien diría, quien diría q' lo importante <br>
+Es aceptarte y q' me aceptes como humano <br>
+Y q' te ame y q' me ames es una ironía <br>
+Q' bendición la mía <br>
+Despertar junto a ti cada día <br>
+<br>
+Yo trovador y tu estudiante de economía <br>
+Tu con los números yo con la filosofía <br>
+Y aunq' suene imposible en teoría <br>
+Al amor le importan poco las utopías <br>
+ <br>
+Dice la gente q' tu y yo no hacemos compañía <br>
+X ser agua y aceite q' ironía <br>
+Si fuésemos iguales q' apatía <br>
+No tendríamos de q' hablar cada siguiente día <br>
+<br>
+Quien diría, quien diría q' son años <br>
+Los q' ya llevamos juntos de la mano <br>
+Quien diría, quien diría q' lo importante <br>
+Es aceptarte y q' me aceptes como humano <br>
+Y q' te ame y q' me ames es una ironía <br>
+Q' bendición la mía <br>
+Despertar junto a ti cada día  <br><br>
+
+<HR>
+<BR><BR>
+<embed src="quien diria.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

@@ -1,0 +1,152 @@
+<html> 
+<head>
+<title>1er mes... =></title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+
+<!--***BARRA DE ABAJO**-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 1000
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "Q' DÍA BB????????............"
+ar[1] = "ONTAAAAAA BB?????????......ONTA?????????......"
+ar[2] = "SABES Q' TE AMO MUCHOOOOOOOOOOO?......."
+ar[3] = "PERO MUCHO MUCHO EHHHHHHHHHHHHH......."
+ar[4] = "ME CREESSSS?......."
+ar[5] = "TE AMOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO!!!!!!!!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO**-->
+
+
+
+<!--***VENTANAS**-->
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana() {
+var Nueva = window.open("no te vayas.swf","","status,height=350,width=500")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = true
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana1() {
+var Nueva = window.open("onta_bb.swf","","status,height=350,width=500")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+<!--***FIN DE VENTANAS**-->
+</head>
+
+<body bgcolor="black">
+
+<p align="right">
+<i><FONT FACE="COMIC SANS MS" color="RED"SIZE=2>110205'</i>
+</p>
+<hR><BR>
+<center>
+<font color="white" FACE="COMIC SANS MS" SIZE=3><BR>
+Hola Amor!!!...tal vez...no recuerdes la fecha...o q sucedio hace un mesesito?????...<BR>
+pero aki toy pa recordarte....
+<BR><BR>
+Hace UNNNN MESSSSSS!!!!!...me pediste q juera tu novia...ya recordaste????...<BR>
+y yo no podia dejar pasar este gran acontecimiento...así q....aki tenes 2 peliculitas...a lo mejor muy simples...pero sabes q con todo mi amor fueron hechas para ti...asi q checalas ok.....<BR>
+y no olvides q...<BR><BR>
+<img src="t.gif" width=15%>
+<img src="e.gif" width=15%>
+<img src="a.gif" width=15%>
+<img src="m.gif" width=15%>
+<img src="o.gif" width=15%>
+<BR><BR>
+...y q ese día me hiciste + feliz de lo q ya era...pues desde antes...mucho antes...sé q tengo...<BR>
+tu amistad...tu cariño....tu ternura...y tu gran Amor....TE AMO...y sabes q no fue apartir de esa petición...<BR>
+fue desde mucho tiempo atras...lo sabias verdad?....
+
+<BR><BR><CENTER>
+<font color="white" FACE="COMIC SANS MS" SIZE=2>
+
+<BR>
+
+<center>
+ <INPUT onclick=CrearVentana() type=IMAGE SRC="no te vayas.bmp" WIDTH="20%" ALT="YA NO TE VAYAS..." name=newOne> 
+<BR><BR>
+
+ <INPUT onclick=CrearVentana1() type=IMAGE SRC="onta.bmp" WIDTH="15%" ALT="ONTA BB..." name=newOne> 
+</CENTER>
+
+
+<BR>
+<p align="right">
+<i><FONT FACE="COMIC SANS MS" color="0033FF"SIZE=5>Y<FONT FACE="COMIC SANS MS" color="00CCFF"SIZE=5>oo<FONT FACE="COMIC SANS MS" color="9933FF" SIZE=5>oo</i>
+</p>
+
+
+<!--***BARRA DE ARRIBA**-->
+<script language="JavaScript1.2">
+var message="1ER MES......" 
+var message=message+"          " 
+i="0"			         
+var temptitle=""
+var speed="15"
+
+function titler(){
+if (!document.all&&!document.getElementById)
+return
+document.title=temptitle+message.charAt(i)
+temptitle=temptitle+message.charAt(i)
+i++	
+if(i==message.length)
+{
+i="0"
+temptitle=""
+}
+setTimeout("titler()",speed)
+}
+
+window.onload=titler
+</script>
+<!--***FIN DE BARRA DE ARRIBA**-->

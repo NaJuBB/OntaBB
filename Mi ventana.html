@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE>Mi ventana</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: 0033CC; SCROLLBAR-HIGHLIGHT-COLOR: SKYBLUE; SCROLLBAR-SHADOW-COLOR: SKYBLUE; SCROLLBAR-3DLIGHT-COLOR: SKYBLUE; SCROLLBAR-ARROW-COLOR: SKYBLUE; SCROLLBAR-TRACK-COLOR: SKYBLUE; SCROLLBAR-DARKSHADOW-COLOR: SKYBLUE }</style>
+</HEAD>
+
+<BODY BGCOLOR="SKYBLUE">
+<HR><center>
+
+<!--***TEXTO***-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 60; 
+str= "Miro al cielo y pienso...Donde andaras?...<BR>Q estaras haciendo?...y dejo volar mi mente.<BR>Sientelo, xq rozo tu cuerpo....dulcemente lo acaricio y te rodeo con mis brazos,<BR>como si fuese esto posible. Mirando ese cielo,<BR>pienso en esas caricias q con la mente te hago...veo, como despacio acostado, reclinas tu cabeza hacia mi...y observo esos ojitos cerrados,<BR>en parte vencidos x el sueño, en parte x mis caricias...<BR>Q satisfaccion observar tu carita, quieta, relajada, tranquila....<BR>dejandose acaricar plenamente.<BR><BR>Abro mis ojos, xq no quiero dejar ese lindo sueño...y miro el cielo,<BR> esas estrellas tan inalcanzables en el firmamento y pienso....<BR> Es posible q los dos, estemos cubiertos estando uno de el otro tan lejos <BR>x este mismo cielo !!!<BR> Q bella la vida, tan lejos y es posible q miremos el mismo cielo, la misma estrella.<BR>Meditando esto, siento unas ganas locas de abrazarte y como un acto impulsivo,<BR> cierro mis brazos alrededor mio.<BR> Un escalofrio me recorre, aprieto mas aun ese abrazo<BR> y al tiempo de cerrar mis ojos....<BR>No te veo, pero te siento conmigo.<BR>No estas, pero te siento mio.<BR><BR>Y de fondo tengo musica q a penas se percibe <BR>xq no quiero ahogar el sonido de la noche, <BR>ese debil sonido del viento....ese sonido q te hace abandonarte y casi dormirte.<BR>Dios mio, Bebé...como me gustaria q estubieses conmigo.<BR>Y cierro de nuevo mis ojos, dejandome llevar x el sonido y el aroma de la noche,<BR>ello me trae de nuevo a ti.<BR><BR>Te sigo viendo dormido a mi lado.<BR>Al rozar tus labios, con la yema de mis dedos, entreabres los ojos <BR>y con una debil sonrisa,volteas tu cara hacia mi...<BR>Yo intento besarte, dulce y casi rozando tus labios con los mios...<BR>Pero te incorporas y girando mi cuerpo, me recuestas y ese beso, tierno y casi vergonzoso,se convierte poco a poco en un beso apasionado...<BR>Siento poco a poco el peso de tu cuerpo en mi....<BR>Y entre besos y caricias, comienza ese sueño, de el q nunca quiero despertar.<BR>En el q solo existimos tu y yo.......<BR>En el q soy totalmente tuya y te siento mio.<BR><BR>Nada nubla nuestras mentes, nada nos preocupa, solo nos dejamos llevar <BR>x lo mucho q sentimos el uno x el otro.<BR>Cuantas veces te siento dentro de mi, q hasta erizar mi piel siento, <br>cuantas como esta noche a tu lado duermo, sintiendo tu respiracion pegadita a mi cuello.<BR><BR>Esa luna reflejada complice de nuestros besos, de nuestros cuerpos rodando....<BR>Nos ven amarnos una y otra vez, y cuando la luz de la noche se va apagando, <BR>deja mi sueño de vivir, y una lagrima x mis mejillas va rodando.<BR>X q tanto te quiero q te siento conmigo, xq me siento tuya <BR>y no te tengo a mi lado.<BR>Quedo mirando ese orizonte de luna iluminado, ya debil x la hora, q pronto ira amaneciendo y me hace levantar la vista al cielo, y a Dios pedir:<BR> Tú que lo ves, cuidalo...x q realmente lo quiero.<BR><BR>Pronto, no estare en esta ventana, pronto no sabré q sera de mi.<BR> Y sigo pidiendo a Dios, q te cuide, q vele x mi tu camino.<BR> Algo q comenzo a nacer tan lindo, tan bello...q no lo pierda nunca.<BR>Prefiero tenerte asi...en sueños q no tenerte jamas.<BR><BR>Ya es tarde y hace frio, pero no tengo ganas de dejar mi sueño...no quiero dejar de pensar en ti.<BR> Xq cuando no te tengo, siento q estoy vacia....triste, y sin ganas de nada.<BR>Tú das fuerza a mi vida.<BR>Tú mi Bebé...quien a sueños haces nacer ilusión y alegria en mi.<BR>Eres mas de lo q esperaba, de lo q soñaba.<BR>Eres un imposible, pero....q mas da? Soy contigo feliz....<BR>Tú, mi sueño, q feliz de tenerte, lejano pero de tenerte ....soy feliz.<BR><BR>Me dispongo a entrar a  mi cuarto.....Y mirando x ultima vez mi ventana....dejo escapar un: shhhh...y un guiño de complicidad.<BR><BR>Ella sabe mi secreto y sé q no lo contará.<BR>"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="COMIC SANS MS" color="BLUE">'+msg.fontsize(4)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="comic sans ms" color="BLUE">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 100px; top: 50px"></span>
+<!--***TEXTO***-->
+
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+<HR>
+<CENTER>
+ <embed src="Amarte es un placer.mp3" width="0" height="0">
+

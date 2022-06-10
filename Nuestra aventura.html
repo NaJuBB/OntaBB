@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Nuestra Aventura</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: FFFFFF; SCROLLBAR-HIGHLIGHT-COLOR: CCCCCC; SCROLLBAR-SHADOW-COLOR: CCCCCC; SCROLLBAR-3DLIGHT-COLOR: CCCCCC; SCROLLBAR-ARROW-COLOR: CCCCCC; SCROLLBAR-TRACK-COLOR: CCCCCC; SCROLLBAR-DARKSHADOW-COLOR: CCCCCC }</style>
+</head>
+
+<body background="atardecer.jpg" bgproperties="fixed">
+<font face="comic sans ms" size=3 color="white">
+
+<!--***TEXTO***-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 70; 
+str= "Hoy descubri el amor en ti<BR>Y supe valorarte<BR>Tengo q' confesarte<BR>Lo hermoso q' es quererte.<BR><BR>Si, en tus labios<BR>Encuentro la pasión<BR>La ternura y la salvación<BR>Para este loco corazón.<BR><BR>Si, sé q' para ti<BR>Soy la inspiración<BR>La locura y la emoción<BR>Para ayudarte en tu expedición.<BR><BR>X q' para querernos<BR>No hay sensación mas grande<BR>Q' las caricias en nuestra piel<BR>Con el sabor en los labios a miel.<BR><BR>Con tu dulzura<BR>Y con mi ternura<BR>Somos fuego q' aumenta la temperatura<BR>Y explora en lo profundo de nuestra aventura.<BR>"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="ARIAL" color="WHITE">'+msg.fontsize(3)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="ARIAL" color="WHITE">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 200px; top: 10px"></span>
+<!--***FIN DE TEXTO***-->
+
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+<CENTER>
+
+

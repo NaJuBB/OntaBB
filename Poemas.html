@@ -1,0 +1,177 @@
+<HTML>
+<HEAD>
+<TITLE>Poemas !!!!...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "AHHH ESTO ESTA CHIDO!!!!!!............"
+ar[1] = "LEAN LOS POEMAS!!!!!......"
+ar[2] = "PERO NO LLOREN EHHHHH......."
+ar[3] = "NOMAS ACUERDENCE......."
+ar[4] = "Y BEBEEEEEEEEEEÉ ))))))))))))))))))))))......."
+ar[5] = "TE AMOOOOOOOOOO MUCHO MUCHOOOOOOOO!!!!!!!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+
+
+<!--***CORAZONES***-->
+<script language="JavaScript1.2">
+
+grphcs=new Array(5) 
+
+//PRELOAD the involved images (extend or contract variables according to # of images used)
+Image0=new Image();
+Image0.src=grphcs[0]="corazont.gif"
+Image1=new Image();
+Image1.src=grphcs[1]="corazont.gif"
+Image2=new Image();
+Image2.src=grphcs[2]="corazont.gif"
+Image3=new Image();
+Image3.src=grphcs[3]="corazont.gif"
+Image4=new Image();
+Image4.src=grphcs[4]="corazont.gif"
+Image5=new Image();
+Image5.src=grphcs[5]="corazont.gif"
+
+//SPECIFY number of images to randomly display concurrently from list above. Less the more efficient
+Amount=3; 
+Ypos=new Array();
+Xpos=new Array();
+Speed=new Array();
+Step=new Array();
+Cstep=new Array();
+ns=(document.layers)?1:0;
+ns6=(document.getElementById&&!document.all)?1:0;
+ie=document.all
+
+if (ns){
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write("<LAYER NAME='sn"+i+"' LEFT=0 TOP=0><img src="+rndPic+"></LAYER>");
+}
+}
+else{
+document.write('<div style="position:absolute;top:0px;left:0px"><div style="position:relative">');
+for (i = 0; i < Amount; i++){
+var P=Math.floor(Math.random()*grphcs.length);
+rndPic=grphcs[P];
+document.write('<img id="si'+i+'" src="'+rndPic+'" style="position:absolute;top:0px;left:0px">');
+}
+document.write('</div></div>');
+}
+WinHeight=(ns||ns6)?window.innerHeight-70:window.document.body.clientHeight;
+WinWidth=(ns||ns6)?window.innerWidth:window.document.body.clientWidth;
+for (i=0; i < Amount; i++){                                                                
+ Ypos[i] = Math.round(Math.random()*WinHeight);
+ Xpos[i] = Math.round(Math.random()*WinWidth);
+ Speed[i]= Math.random()*5+1;
+ Cstep[i]=0;
+ Step[i]=Math.random()*0.1+0.05;
+}
+function fly(){
+var WinHeight=(ns||ns6)?window.innerHeight:window.document.body.clientHeight;
+var WinWidth=(ns||ns6)?window.innerWidth-70:window.document.body.clientWidth;
+var hscrll=(ns||ns6)?window.pageYOffset:document.body.scrollTop;
+var wscrll=(ns||ns6)?window.pageXOffset:document.body.scrollLeft;
+
+for (i=0; i < Amount; i++){
+sy = Speed[i]*Math.sin(Cstep[i]);
+sx = Speed[i]*2;
+Ypos[i]+=sy;
+Xpos[i]+=sx; 
+if (Xpos[i] > WinWidth){
+Ypos[i]=Math.round(Math.random()*WinHeight);
+Xpos[i]=-60;
+Speed[i]=Math.random()*5+1;
+}
+
+if (ns){
+document.layers['sn'+i].left=Xpos[i]+wscrll;
+document.layers['sn'+i].top=Ypos[i];
+}
+
+else if (ns6){
+document.getElementById("si"+i).style.left=Xpos[i]+wscrll;
+document.getElementById("si"+i).style.top=Math.min(WinHeight,Ypos[i]);
+}
+
+else{
+eval("document.all.si"+i).style.left=Xpos[i]+wscrll;
+eval("document.all.si"+i).style.top=Ypos[i];
+} 
+Cstep[i]+=Step[i];
+}
+setTimeout('fly()',20);
+}
+
+if (ie||ns||ns6)
+window.onload=fly
+//-->
+</script>
+<!--***FIN DE CORAZONES***-->
+</HEAD>
+
+<style type="text/css"> 
+<!-- 
+A { text-decoration: none } 
+--> </style>
+
+<BODY BGCOLOR="BLACK" LINK="WHITE">
+
+<HR><BR><BR>
+
+<CENTER>
+<FONT FACE="Bradley Hand ITC" SIZE=4>
+<A HREF="Amar en silencio.html" target=_black>AMAR EN SILENCIO</A><BR><BR><BR>
+<A HREF="He decidido dejar de quererte.html" target=_black>HE DECIDIDO DEJAR DE QUERERTE</A><BR><BR><BR>
+<A HREF="Me extrañaras.html" target=_black>ME EXTRAÑARAS</A><BR><BR><BR>
+<A HREF="Nuestra aventura.html" target=_black>NUESTRA AVENTURA</A><BR><BR><BR>
+<A HREF="El amor aun existe.html" target=_black>EL AMOR AÚN EXISTE</A><BR><BR><BR>
+<A HREF="Sobre el amor.html" target=_black>SOBRE EL AMOR</A><BR><BR><BR>
+
+<A HREF="Yo conozco.html" target=_black>YO CONOZCO </A><BR><BR><BR>
+
+
+<A HREF="Mi ventana.html" target=_black>MI VENTANA</A><BR><BR>
+<FONT FACE="Staccato222 BT" COLOR="WHITE" SIZE=2>
+<BR><HR>
+

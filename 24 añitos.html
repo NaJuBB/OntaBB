@@ -1,0 +1,147 @@
+<HTML>
+<HEAD>
+<TITLE>24 AÑITOS</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO**-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "ESTO PASO..............."
+ar[1] = "CUANDO BB CUMPLIO 24 AÑITOS!!!!!......"
+ar[2] = "ESPERO TE HAYA GUSTADO BB!!!!......."
+ar[3] = "TE AMOOOOOOOOO!!!!!!!"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO**-->
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana1() {
+var Nueva = window.open("Cumple 021107-1.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana2() {
+var Nueva = window.open("Cumple 021107-2.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana3() {
+var Nueva = window.open("Cumple 021107-3.3gp","","status,height=210,width=320")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = TRUE
+}
+</SCRIPT>
+
+
+</HEAD>
+
+<BODY BGCOLOR="BLACK">
+
+<FONT FACE="COMIC SANS MS" SIZE=3 COLOR="WHITE">
+<HR><BR>
+<CENTER>
+Este ha sido el cumpleaños mas creativo...
+<br><BR>
+<IMG SRC="jeje.gif" ALT="JEJEJEJE!!!">
+<br><BR>
+pero x falta de recursos....  
+<br><BR>
+<IMG SRC="=(.gif" ALT="AAAMMMMHHHHH!!!"><br>
+<BR>
+<BR>
+Miren xq!!!!!!!
+<BR>
+<BR>
+<IMG SRC="osci.jpg" WIDTH="15%" ALT="OSO Y CINTURON!!!">
+<br><br>
+Todo hecho x mi.... 
+<br><br>
+<IMG SRC="oso.jpg" ALT="OSO!!!">
+<br><br>
+<IMG SRC="cinturon.jpg" ALT="CINTURON!!!">
+<br><br>
+<IMG SRC="hebilla.jpg" WIDTH="7%" ALT="HEBILLA!!!">
+<br><br>
+<IMG SRC="krta.jpg" WIDTH="20%" ALT="UNA CARTITA!!!">
+<br><br><br>
+
+<FONT SIZE=5">
+Pero esto fue lo q paso!!!...
+</FONT><BR><BR>
+
+
+<center>
+ <INPUT onclick=CrearVentana1() type=IMAGE SRC="1.jpg" WIDTH="17%" ALT="VEAMOS!!!....." name=newOne> 
+ <INPUT onclick=CrearVentana2() type=IMAGE SRC="2.jpg" WIDTH="17%" ALT="LAS MAÑANITAS Y PASTEL!!!!....." name=newOne> 
+ <INPUT onclick=CrearVentana3() type=IMAGE SRC="3.jpg" WIDTH="17%" ALT="LOS ABRAZOS Y REGALOS!!!!....." name=newOne> 
+
+<BR><BR><BR>
+
+<FONT SIZE=4">
+De corazón AMOR!!!!...espero la hayas pasado bien...y nunca olvides y siempre recuerda q....
+</FONT><BR><BR>
+
+
+
+<FONT FACE="COMIC SANS MS" SIZE=7 COLOR="CC0000">
+TE AMO MUCHO!!!!!
+</FONT><BR>
+
+<BR><HR>
+
+

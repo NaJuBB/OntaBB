@@ -1,0 +1,102 @@
+<html> 
+<head>
+<title>Miedo</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "MIEDO............"
+ar[1] = "PEPÉ AGUILAR......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=5>Miedo...
+<font size=1>Pepé Aguilar</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Hace tanto tiempo sin saber de ti <br>
+X fin me encuentro frente a frente<br>
+Extraña sensación buscar adentro<br>
+En libertad de sentirme preso<br>
+Frente al espejo llorar mis miedos<br>
+<br>
+Miedo de sentirme solo, teniendote<br>
+Miedo a no sentir tus, manos sobre mi piel<br>
+Miedo a no saber q' piensas, si te hago falta<br>
+Ganas de tirar mi ego, x la ventana<br>
+Y me pregunto q' hago aqui...sin ti <br>
+<br>
+Esto de mostrarme frente al mundo<br>
+A cara limpia<br>
+No se si es justo<br>
+Se dice q' el amor puede ser ciego<br>
+En  libertad de sentirme preso<br>
+Frente al espejo llorar mis miedos<br>
+<br>
+Miedo de sentirme solo, teniendote<br>
+Miedo a no sentir tus, manos sobre mi piel<br>
+Miedo a no saber q' piensas, si te hago falta<br>
+Ganas de tirar mi ego, x la ventana<br>
+Y me pregunto q' hago aqui...sin ti <br>
+<br>
+Y tu mi amigo <br>
+Q' pensaras<br>
+Si estas =...q' yo<br>
+<br>
+Tienes miedo<br>
+Siempre miedo<br>
+Siempre miedo <br>
+Tanto miedo <br>
+
+
+<BR><BR>
+<HR>
+<BR><BR>
+<embed src="Miedo.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

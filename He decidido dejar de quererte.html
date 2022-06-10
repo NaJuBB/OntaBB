@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>He decidido dejar de quererte</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: FFCC66; SCROLLBAR-HIGHLIGHT-COLOR: FF9900; SCROLLBAR-SHADOW-COLOR: FF9900; SCROLLBAR-3DLIGHT-COLOR: FF9900; SCROLLBAR-ARROW-COLOR: FF9900; SCROLLBAR-TRACK-COLOR: FF9900; SCROLLBAR-DARKSHADOW-COLOR: FF9900 }</style>
+</head>
+
+<body background="pai.jpg" bgproperties="fixed">
+<font face="comic sans ms" size=3 color="white">
+
+<!--***TEXTO***-->
+<script language="JavaScript">
+<!--
+var isIE4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appVersion).indexOf("MSIE") != -1); 
+var isNN4 = (navigator.appVersion.charAt(0)>=4 && (navigator.appName).indexOf("Netscape") != -1); 
+tID = 0;
+i = 0;
+spd  = 70; 
+str= "He decidido esta tarde dejar de quererte<BR>Dejar q' esto distinto q' siento x ti<BR>Se transforme con el tiempo<BR>En algo + simple, + sencillo.<BR><BR>He decidido ser egoista<BR>Y no seguir dandote a manos llenas mi amor<BR>Voy a esperar q' tus palabras<BR>Y tus caricias lleguen primero.<BR><BR>He decidido medir lo q' siento x ti<BR>Borrar este sentimiento<BR>Q' me nace y vuela recorriendo mi cuerpo<BR>Llevando sabia nueva a mis raices secas.<BR><BR>Este sentimiento q' me embarga cuando me dices<BR>Una palabra con ternura y olvido el dolor<BR>De tantos dias de ausencia.<BR><BR>He decidido esta tarde dejar de quererte<BR>Solo me pregunto como borrarte de mi piel,<BR>Mi vida, mis sentidos,<BR>Como si no te hubiese conocido.<BR>"
+function typeLayer() {
+ if(i >  str.length){
+  clearTimeout(tID);
+ } else {
+  msg = str.substring(0,i);
+  if(isNN4 == true){
+   document.layers['layer1'].document.write('<font face="ARIAL" color="WHITE">'+msg.fontsize(3)+'</font>');
+   document.layers['layer1'].document.close();
+  }
+  if(isIE4 == true){
+   layer1.innerHTML = '<strong><font face="ARIAL" color="YELLOW">'+msg.fontsize(3)+'</font></strong>';
+  }
+  i++;
+  tID = setTimeout("typeLayer()",spd);
+ }
+}
+//-->
+</script>
+<span id="layer1" style="position: absolute; left: 200px; top: 10px"></span>
+<!--***TEXTO***-->
+
+<body onload="typeLayer()" onunload="clearTimeout(tID)">
+
+<BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR><BR>
+
+
+<CENTER>
+

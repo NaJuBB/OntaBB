@@ -1,0 +1,109 @@
+<html> 
+<head>
+<title>Cada vez q me amas</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "LUIS EDUARDO AUTE......"
+ar[2] = "TAMBIÉN  FAVORITO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO*-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Cada vez q me amas...
+<font size=1>Luis Eduardo Aute</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Tu sed <BR>
+Transubstancia mi sudor <BR>
+En vino q bebemos en cada beso<BR>
+<BR>
+Tus pies <BR>
+No se hunden<BR>
+En los lagos de mis lágrimas caidas<BR>
+<BR>
+Tú saliva <BR>
+Siembra la luz<BR>
+En la noche de mis ojos...de mis ojos<BR>
+<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez...q me amas...<BR>
+<BR>
+Tu voz resucita <BR>
+Mis músculos dormidos<BR>
+Mis latidos sepultados...latidos sepultados<BR>
+<BR>
+Tus manos<BR>
+Cuando me tocan<BR>
+Curan mis heridas <BR>
+Más invisibles...mas invisibles<BR>
+<BR>
+Tu hambre <BR>
+Fecunda peces <BR>
+Q se multiplican <BR>
+Como deseos de humedad...deseos de humedad<BR>
+En el múltiple pan...pan de mi cuerpo<BR>
+<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez q me amas...es un milagro<BR>
+Cada vez...<BR><BR>
+<HR>
+<BR><BR>
+<embed src="cada vez q me amas.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>

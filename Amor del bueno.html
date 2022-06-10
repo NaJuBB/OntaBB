@@ -1,0 +1,124 @@
+<html> 
+<head>
+<title>Amor del bueno</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO*-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "REYLI......"
+ar[1] = "AMOR DEL BUENO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO*-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Amor del bueno...
+<font size=1>Reyli</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Como un cuchillo <br>
+En la mantequilla <br>
+Entraste a mi vida <br>
+Cuando me moria <br>
+<br>
+Como la luna <br>
+X la rendija <br>
+Así te metiste <br>
+Entre mis pupilas <br>
+<br>
+Y así te fui queriendo a diario <br>
+Sin una ley, sin un horario uuuuuuh uh uuuuuuh <br>
+Y así me fuiste despertando <br>
+De cada sueño, donde estabas tuuu uh uuuh<br>
+<br>
+Y nadie lo buscaba <br>
+Y nadie lo planeo así <br>
+En el destino estaba <br>
+Q' fueras para mi <br>
+<br>
+Y nadie le apostaba <br>
+A q' yo fuera tan feliz <br>
+Pero cupido se apiado de mí…<br>
+<br>
+Se apiado de mí...<br>
+uhhhhh uhh uhhh<br>
+Se apiado de mí...<br>
+<br>
+Como la lluvia <br>
+En pleno desierto <br>
+Mojaste de fe mi corazón <br>
+Ahogaste mis miedos <br>
+<br>
+Como una dulce voz <br>
+En el silencio <br>
+Así nos llego el amor <br>
+Amor del bueno <br>
+<br>
+Y así te fui queriendo a diario <br>
+Sin una ley, sin un horario <br>
+Y así me fuiste despertando <br>
+De cada sueño, donde estabas tu <br>
+<br>
+Y nadie lo buscaba <br>
+y nadie lo planeo asi <br>
+En el destino estaba <br>
+Q' fueras para mi <br>
+<br>
+Y nadie le apostaba <br>
+A q' yo fuera tan feliz <br>
+Pero cupido se apiado de mí <br>
+<br>
+Y nadie le apostaba <br>
+A q' yo fuera tan feliz <br>
+Pero cupido se apiado de mí <br>
+Se apiado de mí....<br><br>
+
+<HR>
+<BR><BR>
+<embed src="amor del bueno.mp3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

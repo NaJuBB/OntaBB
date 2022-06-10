@@ -1,0 +1,137 @@
+<HTML>
+<HEAD>
+<TITLE>Fotos</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "ESTAS SON FOTOS!!!!!!............"
+ar[1] = "DE BEBÉ......"
+ar[2] = "BEBÉ Y YOO......."
+ar[3] = "=)"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</HEAD>
+
+<BODY BGCOLOR="BLACK" LINK="black" vlink="black">
+<HR><BR>
+<CENTER>
+<FONT FACE="Bradley Hand ITC" SIZE=4>
+
+<img src="bb3.jpg" WIDTH="50%" ALT="MONITO MI BB!!!">
+<BR><BR>
+<img src="el y yo.jpg" WIDTH="40%" ALT="Q BIEN NOS VEMOS JUNTOS!!!">
+<img src="aki.jpg" WIDTH="40%" ALT="ACOSTADOS!!!!...">
+<BR><BR>
+<A HREF="foto.jpg" TARGET=_BLACK><img src="Foto.jpg" WIDTH="40%" ALT="CON SUS CUATES!!!"></A>
+<BR><BR>
+<img src="mi bb.jpg" WIDTH="40%" ALT="Q MONITOS!!!...">
+<img src="aki tamien.jpg" WIDTH="40%" ALT="KESKE DORMIDO NO?...">
+<BR><BR>
+<img src="su pancita.jpg" WIDTH="40%" ALT="SU PANCHITA!!!">
+<img src="pose.jpg" WIDTH="40%" ALT="QUE BUENA POSE NO!!!">
+<BR><BR>
+<img src="no pudo.jpg" WIDTH="40%" ALT="Q CARITA...=)">
+<img src="juntos.jpg" WIDTH="40%" ALT="Q BIEN NOS VEMOS JUNTOS!!!">
+<BR><BR>
+
+<img src="universum.jpg" WIDTH="40%" ALT="RECUERDAS CUANDO FUIMOS A UNIVERSUM???"></A>
+<BR><BR>
+<img src="q serio.jpg" WIDTH="40%" ALT="MUY SERIO...PERO NI EL SE LA CREE!!!">
+<img src="2.bmp" WIDTH="40%" ALT="YO...SU NIÑA!!!">
+<BR><BR>
+
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>PERO A Q NO SABEN KEN ES ESTE NIÑO...
+<BR><BR>
+</CENTER>
+
+<img src="DAMIAN.jpg" WIDTH="50%" ALT="TA MONITO NO????...">
+<BR><BR>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>ES SU HIJO DE MI BB...
+</CENTER>
+
+<BR><BR><BR>
+
+<img src="BB.jpg" WIDTH="40%" ALT="MONITO!!!...">
+
+<BR><BR><BR>
+
+<CENTER>
+<FONT FACE="Chiller" COLOR="SKYBLUE" SIZE=6>NUESTRO TERCER ANIVERSARIO!!!!...
+<BR><BR>
+</CENTER>
+
+<img src="3-1.jpg" WIDTH="30%" ALT="HAAAA...FLORES!!!!...">
+<img src="3-2.jpg" WIDTH="30%" ALT="LOS DOS!!!!...">
+<img src="3-3.jpg" WIDTH="30%" ALT="=)...">
+
+<BR><BR>
+
+<img src="OFICIAL.jpg" WIDTH="38%" ALT="MI GUARDADESPALDAS!!!...">
+<img src="T.jpg" WIDTH="40%" ALT="TE VOY A SECUESTRAR!!!...">
+
+<BR><BR>
+
+<img src="atos.jpg" WIDTH="39%" ALT="EN ATOS!!!...">
+<img src="atos2.jpg" WIDTH="39%" ALT="DANDO UNO PASEITO!!!...">
+
+<BR><BR>
+
+<img src="MOMIDO.jpg" WIDTH="40%" ALT="Q SOÑARA!!!...">
+<img src="RRR.jpg" WIDTH="40%" ALT="COMO DUERME NO?!!!...">
+
+<BR><BR>
+
+<img src="YO.jpg" WIDTH="30%" ALT="AKI TOY SU KSA!!!...">
+<BR><BR>
+<img src="MONITO.jpg" WIDTH="40%" ALT="AHHHHH...MI GRAN AMOR...=)!!!...">
+
+
+<BR>
+
+
+
+<BR><HR>
+

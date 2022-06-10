@@ -1,0 +1,166 @@
+<HTML>
+<HEAD>
+<TITLE>Quien es el ????...</TITLE>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "KEREN SABER KEN ES BEBÉ????????............"
+ar[1] = "PUES LEAN NUESTRA HISTORIA......"
+ar[2] = "NO LE HACE Q' TEN DE CHISMOSOS......."
+ar[3] = "JAJAJAJAJAJAJA......."
+ar[4] = "Y CONOZCANLO!!!!!......."
+ar[5] = "CLICKEEN!!!!!...EHHHH"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+
+
+<!--***VENTANA**-->
+<SCRIPT language=JavaScript>
+var crearw = false
+function CrearVentana() {
+var Nueva = window.open("fer.jpg","","status,height=350,width=350")
+if (crearw) {
+crearw = TRUE
+CrearVentana()
+}
+crearw = true
+}
+</SCRIPT>
+<!--***FIN DE VENTANA***-->
+
+
+<!--***SONIDO EN LINK***-->
+<script LANGUAGE="JavaScript"><!--
+
+var aySound = new Array();
+aySound[0] = "bart.mp3";
+
+document.write('<BGSOUND ID="auIEContainer">')
+IE = (navigator.appVersion.indexOf("MSIE")!=-1 && document.all)? 1:0;
+NS = (navigator.appName=="Netscape" && navigator.plugins["LiveAudio"])? 1:0;
+ver4 = IE||NS? 1:0;
+onload=auPreload;
+
+function auPreload() {
+if (!ver4) return;
+if (NS) auEmb = new Layer(0,window);
+else {
+Str = "<DIV ID='auEmb' STYLE='position:absolute;'></DIV>";
+document.body.insertAdjacentHTML("BeforeEnd",Str);
+}
+var Str = '';
+for (i=0;i<aySound.length;i++)
+Str += "<EMBED SRC='"+aySound[i]+"' AUTOSTART='FALSE' HIDDEN='TRUE'>"
+if (IE) auEmb.innerHTML = Str;
+else {
+auEmb.document.open();
+auEmb.document.write(Str);
+auEmb.document.close();
+}
+auCon = IE? document.all.auIEContainer:auEmb;
+auCon.control = auCtrl;
+}
+function auCtrl(whSound,play) {
+if (IE) this.src = play? aySound[whSound]:'';
+else eval("this.document.embeds[whSound]." + (play? "play()":"stop()"))
+}
+function playSound(whSound) { if (window.auCon) auCon.control(whSound,true); }
+function stopSound(whSound) { if (window.auCon) auCon.control(whSound,false); }
+//-->
+</script>
+<!--***SONIDO EN LINK***-->
+</HEAD>
+
+<BODY BGCOLOR="BLACK">
+<center>
+<img src="señor.gif" ALT="LEE CONMIGO!!!">
+<BR><BR>
+
+
+<FONT FACE="Bradley Hand ITC" COLOR="WHITE" SIZE=4>
+SE PREGUNTARAN, QUIEN ES ESTA PERSONITA?...<br>
+Y PUEDO DECIRLES Q ES ALGUIEN SUPER IMPORTANTE EN MI 
+VIDA...ES ALGUIEN A QUIEN YO QUIERO DEMASIADO...<BR>
+REPRESENTA MUCHO PARA MI.<BR>
+LO CONOCI UN DÍA DE SEPTIEMBRE DEL 2003, PLATIQUE CON ÉL Y 
+OTRAS PERSONAS SOBRE MUCHAS COSAS...ÉL Y YO EN ESA 
+OCASIÓN NO INTERCAMBIAMOS MUCHAS IDEAS...YA Q IBA Y 
+VENIA...DESAPARECIA Y VOLVIA A APARECER...X LO Q 
+SINCERAMENTE ESTE DÍA ME DESESPERO...ESA NOCHE NO PUDE 
+DESPEDIRME DE ÉL...PUES ME FUI DE IMPROVISO.<BR>
+<br>
+OTRO DIA...NO SÉ X Q...TENIA MUCHAS GANAS DE 
+ENCONTRARMELO...Y DE PRONTO APARECIO...ME SALUDO...Y ME 
+PREGUNTO...TE ACUERDAS DE MI??????......YO EMOCIONADA E 
+INCREDULA....CONTESTE...."!!!!!! Q BUENO Q TE VEO...TENIA MUCHAS 
+GANAS DE PLATICAR CONTIGO!!!!!!....ESPERABA 
+ENCONTRARTE...AUNQ DUDABA MUCHO PODER HACERLO."<BR>
+<br>
+DESDE ESE DÍA...NO PUDIMOS DEJAR DE VERNOS...DE 
+ESCUCHARNOS...DISFRUTABA MUCHO DE SU COMPAÑIA....Y CADA 
+NOCHE LO ESPERABA PARA SALUDARLO...PARA CONTARLE....PARA 
+ESCUCHARLO...PARA PASAR UN RATO AGRADABLE A SU LADO...<BR>
+SÉ Q EL SENTIA LO MISMO...PUES ME LO HA DICHO.<BR>
+<br>
+QUIEN LO DIRIA...NUNCA IMAGINE CONOCER A ALGUIEN ASÍ...ÉL ES 
+ESPECIAL EN TODOS LOS SENTIDOS ME GUSTA SU PLATICA...ME 
+ENCANTA SU ATENCIÓN, SU TERNURA AL MIRARME...SU CALIDEZ 
+AL ABRAZARME...SU NOSTALGIA AL ENCONTRARME...<BR>
+Y SU SORPRESA AL ESCUCHARME...<BR><BR>
+<BR>
+PERO OK...ESTO ES SOLO PARA Q SE DEN UNA IDEA <br>
+DE LO Q ESTE NIÑO SIGNIFICA PARA MI....<BR>
+Y PUEDA EXPLICAR EL HECHO DE REALIZAR ESTE SITIO 
+ESPECIALMENTE PARA ÉL<BR>
+SOLO ME RESTA DECIRLE LO Q YA SABE.<BR>
+<BR>
+<FONT FACE="Agatha" COLOR="WHITE" SIZE=5>
+BEBÉ....TE QUIERO MUCHISIMO....<br>
+GRACIAS X PERMITIRME ENTRAR A TU VIDA <br>
+Y CONTINUAR  A MI LADO.</font>
+<BR><BR>
+<center>
+<IMG SRC="bart.gif" ALT="AQUI ESTA BEBÉ!!!!!!...." onMouseOver="playSound(0)" onMouseOut="stopSound(0)">
+
+
+ <INPUT onclick=CrearVentana() type=IMAGE SRC="botongranderojo.gif" ALT="CLICK..PARA VER A BEBÉ !!!!" name=newOne> <BR><BR>
+</CENTER>
+

@@ -1,0 +1,99 @@
+<html> 
+<head>
+<title>Te amare</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "TROVA............"
+ar[1] = "SILVIO RODRIGUEZ......"
+ar[2] = "SU FAVORITO......."
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Te amare...
+<font size=1>Silvio Rodriguez</font></marquee></font></MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Te amaré <BR>
+Te amaré como al mundo <BR>
+Te amaré aunq' tenga final <BR>
+<BR>
+Te amaré <BR>
+Te amaré en lo profundo <BR>
+Te amaré como tengo q' amar <BR>
+<BR>
+Te amaré <BR>
+Te amaré como pueda <BR>
+Te amaré aunq' no sea la paz <BR>
+<BR>
+Te amaré <BR>
+Te amaré lo q' queda <BR>
+Te amaré cuando acabe de amar <BR>
+<BR>
+Te amaré <BR>
+Te amaré si estoy muerto <BR>
+Te amaré el día siguiente además <BR>
+<BR>
+Te amaré <BR>
+Te amaré como siento <BR>
+Te amaré con adiós, con jamás <BR>
+<BR>
+Te amaré <BR>
+Te amaré junto al viento <BR>
+Te amaré como único ser <BR>
+<BR>
+Te amaré hasta el fin de los tiempos <BR>
+Te amaré y después...te amaré <br><br>
+
+<HR>
+<BR><BR>
+<embed src="te amaré.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+

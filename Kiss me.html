@@ -1,0 +1,100 @@
+<html> 
+<head>
+<title>Kiss Me</title>
+<style type="text/css">BODY { SCROLLBAR-FACE-COLOR: #000000; SCROLLBAR-HIGHLIGHT-COLOR: #CCCCCC; SCROLLBAR-SHADOW-COLOR: #CCCCCC; SCROLLBAR-3DLIGHT-COLOR: #000000; SCROLLBAR-ARROW-COLOR: #CCCCCC; SCROLLBAR-TRACK-COLOR: #000000; SCROLLBAR-DARKSHADOW-COLOR: #000000 }</style>
+
+<!--***BARRA DE ABAJO***-->
+<script language="JavaScript" type="text/javascript">
+var speed = 70
+var pause = 300
+var timerID = null
+var bannerRunning = false
+var ar = new Array()
+ar[0] = "KISS ME............"
+ar[1] = "SIXPENCE NONE THE RICHER......"
+var currentMessage = 0
+var offset = 0
+function stopBanner() {
+if (bannerRunning)
+clearTimeout(timerID)
+bannerRunning = false
+}
+function startBanner() {
+stopBanner()
+showBanner()
+}
+function showBanner() {
+var text = ar[currentMessage]
+if (offset < text.length) {
+if (text.charAt(offset) == " ")
+offset++ 
+var partialMessage = text.substring(0, offset + 1) 
+window.status = partialMessage
+offset++ // IE sometimes has trouble with "++offset"
+timerID = setTimeout("showBanner()", speed)
+bannerRunning = true
+} else {
+offset = 0
+currentMessage++
+if (currentMessage == ar.length)
+currentMessage = 0
+timerID = setTimeout("showBanner()", pause)
+bannerRunning = true
+}
+}
+startBanner();
+// -->
+</script>
+<!--***FIN DE BARRA DE ABAJO***-->
+</head>
+
+<body bgcolor="black">
+
+<MARQUEE BEHAVIOR="SLIDE">
+<font color="WHITE" FACE="COMIC SANS MS" SIZE=6>Kiss me...
+<font size=1>Sixpence none the richer</font></marquee></font>
+</MARQUEE>
+<HR>
+<BR><CENTER>
+<font color="CCCCCC" FACE="COMIC SANS MS" SIZE=2>
+Kiss me, out of the bearded barley<BR>
+Nightly, beside the green, green grass<BR>
+Swing, swing, swing the spinning step<BR>
+You wear those shoes and I will wear that dress<BR>
+<BR>
+Oh, kiss me beneath the milky twilight<BR>
+Lead me out on the moonlit floor<BR>
+Lift your open hand<BR>
+Strike up the band and make the fireflies dance<BR>
+Silver moon’s sparkling, so kiss me<BR>
+<BR>
+Kiss me down by the broken tree house<BR>
+Swing me upon its hanging tire<BR>
+Bring, bring, bring your flowered hat<BR>
+We’ll take the trail marked on your father’s map<BR>
+<BR>
+Oh, kiss me beneath the milky twilight<BR>
+Lead me out on the moonlit floor<BR>
+Lift your open hand<BR>
+Strike up the band and make the fireflies dance<BR>
+Silver moon’s sparkling, so kiss me<BR>
+<BR>
+Oh, kiss me beneath the milky twilight<BR>
+Lead me out on the moonlit floor<BR>
+Lift your open hand<BR>
+Strike up the band and make the fireflies dance<BR>
+Silver moon’s sparkling, so kiss me<BR>
+<BR>
+So kiss me<BR>
+So kiss me<BR>
+<BR>
+<BR>
+<HR>
+<BR><BR>
+<embed src="KISS ME.MP3" width="300" height="40">
+</center>
+</font>
+</font>
+</body>
+</html>
+
